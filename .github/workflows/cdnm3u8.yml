@@ -1,0 +1,70 @@
+name: CDN Live TV M3U Güncelle son
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */3 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Python paketleri yükle
+        run: |
+          pip install --upgrade pip
+          pip install requests urllib3 playwright
+
+      - name: Playwright Chromium kur
+        run: |
+          python -m playwright install chromium --with-deps
+
+      - name: M3U ve Kanal Dosyalarını Oluştur
+        env:
+          DISPLAY: ""
+          LIBGL_ALWAYS_SOFTWARE: "1"
+          GALLIUM_DRIVER: "softpipe"
+        run: |
+          python checker.py
+
+      - name: M3U ve Debug Dosyasını Artifact Olarak Yükle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdn-m3u-ve-debug
+          path: |
+            cdn.m3u
+            debug_failed.json
+          if-no-files-found: ignore
+
+      - name: Commit ve push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # ✅ Eski cdnlive klasörünü depodan tamamen temizle (artık tek dosya kullanıyoruz)
+          git rm -rf cdnlive || true
+          
+          # ✅ Yeni cdn.m3u ve hata raporunu git'e ekle
+          git add cdn.m3u debug_failed.json || true
+
+          if git diff --cached --quiet; then
+            echo "ℹ️ Değişiklik yok."
+          else
+            # ✅ cdn.m3u içerisindeki kanal sayısını bul (satır sayarak)
+            KANAL=$(grep -c "#EXTINF" cdn.m3u || echo 0)
+            TARIH=$(TZ='Europe/Istanbul' date '+%d.%m.%Y %H:%M')
+            git commit -m "📺 $KANAL kanal güncellendi — $TARIH"
+            git push
+          fi
