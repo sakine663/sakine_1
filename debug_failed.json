@@ -1,5 +1,12 @@
 [
   {
+    "name": "trtv8buçuk",
+    "player_url": "https://cdnlivetv.tv/api/v1/channels/player/?name=TV8.5&code=tr&user=cdnlivetv&plan=free",
+    "image": "",
+    "group": "TR",
+    "reason": "Geçerli stream URL bulunamadı"
+  },
+  {
     "name": "usespnews",
     "player_url": "https://cdnlivetv.tv/api/v1/channels/player/?name=ESPNews&code=us&user=cdnlivetv&plan=free",
     "image": "",
@@ -11,13 +18,6 @@
     "player_url": "https://cdnlivetv.tv/api/v1/channels/player/?name=ESPNU&code=us&user=cdnlivetv&plan=free",
     "image": "",
     "group": "US",
-    "reason": "Geçerli stream URL bulunamadı"
-  },
-  {
-    "name": "trtv8buçuk",
-    "player_url": "https://cdnlivetv.tv/api/v1/channels/player/?name=TV8.5&code=tr&user=cdnlivetv&plan=free",
-    "image": "",
-    "group": "TR",
     "reason": "Geçerli stream URL bulunamadı"
   },
   {
