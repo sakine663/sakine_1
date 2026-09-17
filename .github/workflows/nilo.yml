@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
 
       - name: Scripti çalıştır
-        run: python umitginiko.py
+        run: python nilo.py
 
       - name: Dosyaları commit et ve push'la
         run: |
