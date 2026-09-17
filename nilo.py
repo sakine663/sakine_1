@@ -140,7 +140,7 @@ def main():
     results.sort(key=lambda x: (not is_turkish(x["name"]), x["id"]))
 
     # JSON kaydet
-    with open("umitginiko.json", "w", encoding="utf-8") as f:
+    with open("sakine.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
     # M3U oluştur
@@ -153,7 +153,7 @@ def main():
             f'{ch["proxied_stream"]}\n'
         )
 
-    with open("umitginiko.m3u", "w", encoding="utf-8") as f:
+    with open("sakine.m3u", "w", encoding="utf-8") as f:
         f.writelines(m3u_lines)
 
     turkish_count = sum(1 for ch in results if is_turkish(ch["name"]))
