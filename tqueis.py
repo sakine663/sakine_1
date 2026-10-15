@@ -53,7 +53,6 @@ SELCUK_NAMES = {
     "selcuktabiispor5": "selcuktabiispor5", 
     "selcuktabiispor6": "selcuktabiispor6", 
     "selcuktabiispor7": "selcuktabiispor7"
-    "selcuktrtavaz": "selcuktrtavaz"
     "selcuktrt1": "selcuktrt1"
     "trtspor": "trtspor"
     "trtspor2": "trtspor2"
