@@ -52,13 +52,13 @@ SELCUK_NAMES = {
     "selcuktabiispor4": "selcuktabiispor4",
     "selcuktabiispor5": "selcuktabiispor5", 
     "selcuktabiispor6": "selcuktabiispor6", 
-    "selcuktabiispor7": "selcuktabiispor7"
-    "selcuktrt1": "selcuktrt1"
-    "trtspor": "trtspor"
-    "trtspor2": "trtspor2"
-    "tv8": "tv8"
-    "tv85": "tv85"
-    "selcukatv": "selcukatv"
+    "selcuktabiispor7": "selcuktabiispor7",  # <-- Virgül eklendi
+    "selcuktrt1": "selcuktrt1",              # <-- Virgül eklendi
+    "trtspor": "trtspor",                  # <-- Virgül eklendi
+    "trtspor2": "trtspor2",                # <-- Virgül eklendi
+    "tv8": "tv8",                          # <-- Virgül eklendi
+    "tv85": "tv85",                        # <-- Virgül eklendi
+    "selcukatv": "selcukatv",              # <-- Virgül eklendi
     "selcukaspor": "selcukaspor"
 }
 
@@ -95,7 +95,6 @@ def find_base_url():
 
     # 2. Aktif domaini bul
     active_domain = ""
-    # Mobil uyumlu linki arıyoruz genelde en günceli o oluyor
     section_match = re.search(r'data-device-mobile[^>]*>(.*?)</div>\s*</div>', html, re.DOTALL)
     if section_match:
         link_match = re.search(r'href=["\'](https?://[^"\']*selcuksportshd[^"\']+)["\']', section_match.group(1))
@@ -130,7 +129,6 @@ def find_base_url():
         print(f"🔍 Player taranıyor: {player_url}")
         html_player = get_html_direct(player_url)
         if html_player:
-            # Olası patternler
             patterns = [
                 r'this\.baseStreamUrl\s*=\s*[\'"](https://[^\'"]+)[\'"]',
                 r'const baseStreamUrl\s*=\s*[\'"](https://[^\'"]+)[\'"]',
@@ -141,7 +139,6 @@ def find_base_url():
                 stream_match = re.search(pattern, html_player)
                 if stream_match:
                     base_stream_url = stream_match.group(1)
-                    # Live klasörünü kontrol et
                     if 'live/' in base_stream_url:
                         base_stream_url = base_stream_url.split('live/')[0] + 'live/'
                     print(f"🎯 Yayın URL Tabanı Bulundu: {base_stream_url}")
@@ -162,11 +159,9 @@ def find_base_url():
     return base_stream_url
 
 def main():
-    # Klasör oluştur
     if not os.path.exists(OUTPUT_FOLDER):
         os.makedirs(OUTPUT_FOLDER)
     
-    # Base URL'i bul
     base_url = find_base_url()
     
     if not base_url:
@@ -176,12 +171,8 @@ def main():
     print(f"⚡ Linkler '{OUTPUT_FOLDER}' klasörüne yazılıyor...")
     
     count = 0
-    # Kanalları oluştur ve kaydet
     for file_name, selcuk_id in SELCUK_NAMES.items():
-        
-        # URL Oluşturma Mantığı (Senin koddan alındı)
         if "sssplus" in selcuk_id:
-            # S Sport Plus özel durumu
             if "1" in selcuk_id:
                 stream_url = base_url + "sssplus1/playlist.m3u8"
             else:
@@ -191,10 +182,8 @@ def main():
         else:
             stream_url = base_url + selcuk_id + "/playlist.m3u8"
         
-        # Dosya İçeriği (Proxy yok, saf link)
         file_content = f"{M3U8_HEADER}\n{stream_url}"
         
-        # Kaydet
         file_path = os.path.join(OUTPUT_FOLDER, f"{file_name}.m3u8")
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(file_content)
