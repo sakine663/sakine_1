@@ -38,14 +38,29 @@ SELCUK_NAMES = {
     "selcuktivibuspor2": "selcuktivibuspor2",
     "selcuktivibuspor3": "selcuktivibuspor3",
     "selcuktivibuspor4": "selcuktivibuspor4",
-    "sssplus1": "sssplus1",
-    "sssplus2": "sssplus2",
+    "selcukssplus1": "selcukssplus1", 
+    "selcukssplus2": "selcukssplus2",
+    "selcukssplus3": "selcukssplus3", 
+    "selcukssplus4": "selcukssplus4", 
+    "selcukssplus5": "selcukssplus5", 
+    "selcukssplus6": "selcukssplus6", 
+    "selcukssplus7": "selcukssplus7", 
     "selcuktabiispor": "selcuktabiispor", 
     "selcuktabiispor1": "selcuktabiispor1", 
     "selcuktabiispor2": "selcuktabiispor2", 
-    "selcuktabiispor3": "selcuktabiispor3", 
-    "selcuktabiispor4": "selcuktabiispor4", 
-    "selcuktabiispor5": "selcuktabiispor5"
+    "selcuktabiispor3": "selcuktabiispor3",
+    "selcuktabiispor4": "selcuktabiispor4",
+    "selcuktabiispor5": "selcuktabiispor5", 
+    "selcuktabiispor6": "selcuktabiispor6", 
+    "selcuktabiispor7": "selcuktabiispor7"
+    "selcuktrtavaz": "selcuktrtavaz"
+    "selcuktrt1": "selcuktrt1"
+    "trtspor": "trtspor"
+    "trtspor2": "trtspor2"
+    "tv8": "tv8"
+    "tv85": "tv85"
+    "selcukatv": "selcukatv"
+    "selcukaspor": "selcukaspor"
 }
 
 # --- YARDIMCI FONKSİYONLAR ---
