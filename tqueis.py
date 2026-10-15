@@ -40,6 +40,7 @@ SELCUK_NAMES = {
     "selcuktivibuspor4": "selcuktivibuspor4",
     "sssplus1": "sssplus1",
     "sssplus2": "sssplus2",
+    "selcuktabiispor": "selcuktabiispor", 
     "selcuktabiispor1": "selcuktabiispor1", 
     "selcuktabiispor2": "selcuktabiispor2", 
     "selcuktabiispor3": "selcuktabiispor3", 
