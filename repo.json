@@ -1,0 +1,9 @@
+{
+  "name": "Karams81-Gitlatte",
+  "description": "Repolardan dermeler",
+  "iconUrl": "https://raw.githubusercontent.com/karams81/crakxyz/refs/heads/main/icons/icon-192.png",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/karams81/crakxyz/refs/heads/main/data.json"
+  ]
+}
