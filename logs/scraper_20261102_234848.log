@@ -1,0 +1,788 @@
+2026-11-02 23:51:17,570 [INFO] 🌐 BASE_URL: https://atomsportv503.top
+2026-11-02 23:51:18,352 [INFO] Başlanıyor... 14 kanal taranacak
+2026-11-02 23:51:18,353 [INFO] Using default request storage
+2026-11-02 23:51:18,357 [INFO] Created proxy listening on 127.0.0.1:38887
+2026-11-02 23:51:19,102 [INFO] Capturing request: http://clients2.google.com/time/1/current?cup2key=ML-DSA-44-10:dts_1e3JGfJMy1K3BRjV394J7_NuROSXe2m0Kw0kPp4&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2026-11-02 23:51:19,232 [INFO] Capturing response: http://clients2.google.com/time/1/current?cup2key=ML-DSA-44-10:dts_1e3JGfJMy1K3BRjV394J7_NuROSXe2m0Kw0kPp4&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 200 OK
+2026-11-02 23:51:19,283 [INFO] 
+[1/14]
+2026-11-02 23:51:19,283 [INFO] 🔍 beIN Sports 1 → https://atomsportv503.top/matches?id=bein-sports-1
+2026-11-02 23:51:19,424 [INFO] Capturing request: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin
+2026-11-02 23:51:19,437 [INFO] Capturing request: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:XVAMiQpnaG1mEvS2vu6P5Fu3-TCkAb9bOZvtCBgiuUc&cup2hreq=86389beeb7368180a379a45daf2a1b9741375e846aa59a2541a078db2131508c
+2026-11-02 23:51:19,526 [INFO] Capturing response: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:XVAMiQpnaG1mEvS2vu6P5Fu3-TCkAb9bOZvtCBgiuUc&cup2hreq=86389beeb7368180a379a45daf2a1b9741375e846aa59a2541a078db2131508c 200 
+2026-11-02 23:51:19,540 [INFO] Capturing response: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin 200 
+2026-11-02 23:51:19,543 [INFO] Capturing request: https://www.google.com/async/folae?async=_fmt:pb&udm=50&client_locale=en-US&client_country=ZZ
+2026-11-02 23:51:19,571 [INFO] Capturing request: https://atomsportv503.top/matches?id=bein-sports-1
+2026-11-02 23:51:19,587 [INFO] Capturing response: https://www.google.com/async/folae?async=_fmt:pb&udm=50&client_locale=en-US&client_country=ZZ 200 
+2026-11-02 23:51:19,590 [INFO] Capturing request: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:16MNG1isdjUv_1PpkfbhIgJ72nrIqXghRn-piOf1ofE&cup2hreq=8f3f0dd54c0f85031048e3c06e4f19c89747dd73d588d1338f3541f544ff8692
+2026-11-02 23:51:19,623 [INFO] Capturing response: https://atomsportv503.top/matches?id=bein-sports-1 301 
+2026-11-02 23:51:19,656 [INFO] Capturing response: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:16MNG1isdjUv_1PpkfbhIgJ72nrIqXghRn-piOf1ofE&cup2hreq=8f3f0dd54c0f85031048e3c06e4f19c89747dd73d588d1338f3541f544ff8692 200 
+2026-11-02 23:51:19,709 [INFO] Capturing request: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:qCOV36nKb_xfefPfZZBRXwy8hEP67vsugdrEH4SdIKc&cup2hreq=b55d3a9631d418e15697add63f331a729bf2ffe20fc7ce2c201f8a3b99dd0ec6
+2026-11-02 23:51:19,772 [INFO] Capturing request: https://redirector.gvt1.com/edgedl/chrome/dict/en-us-10-2.bdic
+2026-11-02 23:51:19,775 [INFO] Capturing response: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:qCOV36nKb_xfefPfZZBRXwy8hEP67vsugdrEH4SdIKc&cup2hreq=b55d3a9631d418e15697add63f331a729bf2ffe20fc7ce2c201f8a3b99dd0ec6 200 
+2026-11-02 23:51:19,790 [INFO] Capturing request: https://www.google.com/async/folae?async=_fmt:pb&udm=50&client_locale=en-US&client_country=ZZ
+2026-11-02 23:51:19,812 [INFO] Capturing response: https://redirector.gvt1.com/edgedl/chrome/dict/en-us-10-2.bdic 302 
+2026-11-02 23:51:19,816 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-02 23:51:19,826 [INFO] Capturing response: https://www.google.com/async/folae?async=_fmt:pb&udm=50&client_locale=en-US&client_country=ZZ 200 
+2026-11-02 23:51:19,856 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-02 23:51:19,900 [INFO] Capturing request: https://rr2---sn-najern7r.gvt1.com/edgedl/chrome/dict/en-us-10-2.bdic?cms_redirect=yes&met=1793663479,&mh=N5&mip=57.151.128.209&mm=28&mn=sn-najern7r&ms=nvh&mt=1793663056&mv=m&mvi=2&pl=17&rmhost=rr5---sn-najern7r.gvt1.com&rms=nvh,nvh&shardbypass=sd&smhost=rr3---sn-ajnaj8-5b.gvt1.com
+2026-11-02 23:51:19,962 [INFO] Capturing response: https://rr2---sn-najern7r.gvt1.com/edgedl/chrome/dict/en-us-10-2.bdic?cms_redirect=yes&met=1793663479,&mh=N5&mip=57.151.128.209&mm=28&mn=sn-najern7r&ms=nvh&mt=1793663056&mv=m&mvi=2&pl=17&rmhost=rr5---sn-najern7r.gvt1.com&rms=nvh,nvh&shardbypass=sd&smhost=rr3---sn-ajnaj8-5b.gvt1.com 200 OK
+2026-11-02 23:51:20,037 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-02 23:51:20,065 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-02 23:51:20,242 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-02 23:51:20,285 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-02 23:51:20,462 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-02 23:51:20,499 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-02 23:51:20,674 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-02 23:51:20,714 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-02 23:51:20,893 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-02 23:51:20,930 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-02 23:51:21,109 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-02 23:51:21,148 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-02 23:51:21,330 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-02 23:51:21,382 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-02 23:51:21,558 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-02 23:51:21,599 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-02 23:51:21,778 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-02 23:51:21,823 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-02 23:51:22,000 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-02 23:51:22,038 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-02 23:51:22,217 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-02 23:51:22,245 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-02 23:51:22,430 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-02 23:51:22,476 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-02 23:51:22,652 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-02 23:51:22,677 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-02 23:51:22,855 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-02 23:52:02,067 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-02 23:52:02,223 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-02 23:52:02,249 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-02 23:52:02,321 [INFO] Capturing request: https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092
+2026-11-02 23:52:02,353 [INFO] Capturing response: https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092 200 
+2026-11-02 23:52:02,399 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-02 23:52:02,400 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-02 23:52:02,402 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-02 23:52:02,405 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-02 23:52:02,406 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-02 23:52:02,434 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-02 23:52:02,456 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-02 23:52:02,459 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-02 23:52:02,464 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-02 23:52:02,466 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-02 23:52:02,485 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:52:02,588 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-02 23:52:02,669 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:52:19,100 [INFO] Capturing request: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:HI5RUuDCO5a-vv5hbW8OxaJPe8ToeN6dnIgaYIuHWyo&cup2hreq=1e54d64ae7ecea38cbcc08353b949a0ce939d3dac3a6e649c7d39119a287de29
+2026-11-02 23:52:19,164 [INFO] Capturing response: https://update.googleapis.com/service/update2/json?cup2key=ML-DSA-44-16:HI5RUuDCO5a-vv5hbW8OxaJPe8ToeN6dnIgaYIuHWyo&cup2hreq=1e54d64ae7ecea38cbcc08353b949a0ce939d3dac3a6e649c7d39119a287de29 200 
+2026-11-02 23:52:19,174 [INFO] Capturing request: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/gcmjkmgdlgnkkcocmoeiminaijmmjnii/6bf09eb90ed9ee14632b09da0ea3f8e6b941d8487be4669375b1db3b727ca3dd
+2026-11-02 23:52:19,226 [INFO] Capturing response: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/gcmjkmgdlgnkkcocmoeiminaijmmjnii/6bf09eb90ed9ee14632b09da0ea3f8e6b941d8487be4669375b1db3b727ca3dd 200 OK
+2026-11-02 23:52:19,256 [INFO] Capturing request: https://update.googleapis.com/service/update2/json
+2026-11-02 23:52:19,316 [INFO] Capturing response: https://update.googleapis.com/service/update2/json 200 
+2026-11-02 23:52:19,361 [INFO] Capturing request: http://edgedl.me.gvt1.com/edgedl/release2/chrome_component/admoqph3fggkdie455sjdrhrkp7q_10879/hfnkpimlhhgieaddgfemjhofmfblmnib_10879_all_adi6u7ess4fgqxbhr673e4grv7nq.crx3
+2026-11-02 23:52:19,438 [INFO] Capturing response: http://edgedl.me.gvt1.com/edgedl/release2/chrome_component/admoqph3fggkdie455sjdrhrkp7q_10879/hfnkpimlhhgieaddgfemjhofmfblmnib_10879_all_adi6u7ess4fgqxbhr673e4grv7nq.crx3 200 OK
+2026-11-02 23:52:19,472 [INFO] Capturing request: https://update.googleapis.com/service/update2/json
+2026-11-02 23:52:19,523 [INFO] Capturing response: https://update.googleapis.com/service/update2/json 200 
+2026-11-02 23:52:35,850 [WARNING]   ❌ beIN Sports 1 için M3U8 bulunamadı
+2026-11-02 23:52:36,850 [INFO] 
+[2/14]
+2026-11-02 23:52:36,850 [INFO] 🔍 beIN Sports 2 → https://atomsportv503.top/matches?id=bein-sports-2
+2026-11-02 23:52:37,044 [INFO] Capturing request: https://atomsportv503.top/matches?id=bein-sports-2
+2026-11-02 23:52:37,089 [INFO] Capturing response: https://atomsportv503.top/matches?id=bein-sports-2 301 
+2026-11-02 23:52:37,268 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-02 23:52:37,310 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-02 23:52:37,480 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-02 23:52:37,511 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-02 23:52:37,686 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-02 23:52:37,717 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-02 23:52:37,894 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-02 23:52:37,939 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-02 23:52:38,108 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-02 23:52:38,134 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-02 23:52:38,306 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-02 23:52:38,335 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-02 23:52:38,511 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-02 23:52:38,555 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-02 23:52:38,727 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-02 23:52:38,770 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-02 23:52:38,947 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-02 23:52:38,974 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-02 23:52:39,155 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-02 23:52:39,202 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-02 23:52:39,377 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-02 23:52:39,413 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-02 23:52:39,589 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-02 23:52:39,643 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-02 23:52:39,814 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-02 23:52:39,840 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-02 23:52:40,013 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-02 23:52:40,051 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-02 23:52:40,221 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-02 23:52:41,855 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-02 23:53:19,366 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-02 23:53:19,422 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:53:19,527 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-02 23:53:19,555 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-02 23:53:19,563 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:53:19,704 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-02 23:53:19,708 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-02 23:53:19,711 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-02 23:53:19,713 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-02 23:53:19,714 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-02 23:53:19,739 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-02 23:53:19,762 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-02 23:53:19,764 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-02 23:53:19,766 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-02 23:53:19,769 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-02 23:53:19,792 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:53:19,892 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-02 23:53:19,974 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:53:53,086 [WARNING]   ❌ beIN Sports 2 için M3U8 bulunamadı
+2026-11-02 23:53:54,086 [INFO] 
+[3/14]
+2026-11-02 23:53:54,087 [INFO] 🔍 beIN Sports 3 → https://atomsportv503.top/matches?id=bein-sports-3
+2026-11-02 23:53:54,202 [INFO] Capturing request: https://atomsportv503.top/matches?id=bein-sports-3
+2026-11-02 23:53:54,231 [INFO] Capturing response: https://atomsportv503.top/matches?id=bein-sports-3 301 
+2026-11-02 23:53:54,336 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-02 23:53:54,366 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-02 23:53:54,471 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-02 23:53:54,502 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-02 23:53:54,607 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-02 23:53:54,638 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-02 23:53:54,743 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-02 23:53:54,770 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-02 23:53:54,875 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-02 23:53:54,901 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-02 23:53:55,006 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-02 23:53:55,050 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-02 23:53:55,155 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-02 23:53:55,200 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-02 23:53:55,305 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-02 23:53:55,338 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-02 23:53:55,443 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-02 23:53:55,485 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-02 23:53:55,590 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-02 23:53:55,618 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-02 23:53:55,723 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-02 23:53:55,760 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-02 23:53:55,866 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-02 23:53:55,894 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-02 23:53:56,000 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-02 23:53:56,039 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-02 23:53:56,144 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-02 23:53:56,173 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-02 23:53:56,278 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-02 23:53:59,167 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-02 23:54:35,142 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-02 23:54:35,193 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:54:35,298 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-02 23:54:35,322 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-02 23:54:35,335 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:54:35,471 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-02 23:54:35,474 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-02 23:54:35,475 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-02 23:54:35,479 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-02 23:54:35,479 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-02 23:54:35,496 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-02 23:54:35,518 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-02 23:54:35,521 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-02 23:54:35,523 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-02 23:54:35,526 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-02 23:54:35,547 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:54:35,651 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-02 23:54:35,707 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:55:08,839 [WARNING]   ❌ beIN Sports 3 için M3U8 bulunamadı
+2026-11-02 23:55:09,839 [INFO] 
+[4/14]
+2026-11-02 23:55:09,840 [INFO] 🔍 beIN Sports 4 → https://atomsportv503.top/matches?id=bein-sports-4
+2026-11-02 23:55:09,960 [INFO] Capturing request: https://atomsportv503.top/matches?id=bein-sports-4
+2026-11-02 23:55:10,010 [INFO] Capturing response: https://atomsportv503.top/matches?id=bein-sports-4 301 
+2026-11-02 23:55:10,138 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-02 23:55:10,166 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-02 23:55:10,271 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-02 23:55:10,312 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-02 23:55:10,417 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-02 23:55:10,464 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-02 23:55:10,568 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-02 23:55:10,608 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-02 23:55:10,713 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-02 23:55:10,759 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-02 23:55:10,863 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-02 23:55:10,904 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-02 23:55:11,009 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-02 23:55:11,053 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-02 23:55:11,158 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-02 23:55:11,195 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-02 23:55:11,301 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-02 23:55:11,342 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-02 23:55:11,447 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-02 23:55:11,482 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-02 23:55:11,587 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-02 23:55:11,615 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-02 23:55:11,720 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-02 23:55:11,765 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-02 23:55:11,870 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-02 23:55:11,907 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-02 23:55:12,012 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-02 23:55:12,174 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-02 23:55:12,279 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-02 23:55:14,944 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-02 23:55:51,430 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-02 23:55:51,482 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:55:51,585 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-02 23:55:51,609 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-02 23:55:51,625 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:55:51,756 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-02 23:55:51,759 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-02 23:55:51,761 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-02 23:55:51,763 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-02 23:55:51,764 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-02 23:55:51,783 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-02 23:55:51,806 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-02 23:55:51,810 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-02 23:55:51,811 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-02 23:55:51,813 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-02 23:55:51,831 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:55:51,935 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-02 23:55:52,016 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:56:25,124 [WARNING]   ❌ beIN Sports 4 için M3U8 bulunamadı
+2026-11-02 23:56:26,124 [INFO] 
+[5/14]
+2026-11-02 23:56:26,124 [INFO] 🔍 beIN Sports 5 → https://atomsportv503.top/matches?id=bein-sports-5
+2026-11-02 23:56:26,260 [INFO] Capturing request: https://atomsportv503.top/matches?id=bein-sports-5
+2026-11-02 23:56:26,369 [INFO] Capturing response: https://atomsportv503.top/matches?id=bein-sports-5 301 
+2026-11-02 23:56:26,490 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-02 23:56:26,517 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-02 23:56:26,623 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-02 23:56:26,652 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-02 23:56:26,757 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-02 23:56:26,801 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-02 23:56:26,906 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-02 23:56:26,957 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-02 23:56:27,063 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-02 23:56:27,109 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-02 23:56:27,214 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-02 23:56:27,243 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-02 23:56:27,348 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-02 23:56:27,376 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-02 23:56:27,481 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-02 23:56:27,509 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-02 23:56:27,613 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-02 23:56:27,650 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-02 23:56:27,755 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-02 23:56:27,802 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-02 23:56:27,907 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-02 23:56:27,945 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-02 23:56:28,050 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-02 23:56:28,078 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-02 23:56:28,183 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-02 23:56:28,219 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-02 23:56:28,325 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-02 23:56:28,353 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-02 23:56:28,458 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-02 23:56:31,231 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-02 23:57:07,205 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-02 23:57:07,256 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:57:07,360 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-02 23:57:07,391 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-02 23:57:07,397 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:57:07,540 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-02 23:57:07,545 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-02 23:57:07,547 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-02 23:57:07,548 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-02 23:57:07,549 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-02 23:57:07,565 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-02 23:57:07,589 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-02 23:57:07,592 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-02 23:57:07,593 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-02 23:57:07,595 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-02 23:57:07,614 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:57:07,719 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-02 23:57:07,798 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:57:40,909 [WARNING]   ❌ beIN Sports 5 için M3U8 bulunamadı
+2026-11-02 23:57:41,909 [INFO] 
+[6/14]
+2026-11-02 23:57:41,909 [INFO] 🔍 beIN Sports Max 1 → https://atomsportv503.top/matches?id=bein-sports-max-1
+2026-11-02 23:57:42,037 [INFO] Capturing request: https://atomsportv503.top/matches?id=bein-sports-max-1
+2026-11-02 23:57:42,118 [INFO] Capturing response: https://atomsportv503.top/matches?id=bein-sports-max-1 301 
+2026-11-02 23:57:42,232 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-02 23:57:42,273 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-02 23:57:42,378 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-02 23:57:42,410 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-02 23:57:42,515 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-02 23:57:42,560 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-02 23:57:42,665 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-02 23:57:42,706 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-02 23:57:42,811 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-02 23:57:42,850 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-02 23:57:42,957 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-02 23:57:42,988 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-02 23:57:43,094 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-02 23:57:43,121 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-02 23:57:43,226 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-02 23:57:43,279 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-02 23:57:43,384 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-02 23:57:43,424 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-02 23:57:43,529 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-02 23:57:43,567 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-02 23:57:43,672 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-02 23:57:43,710 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-02 23:57:43,815 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-02 23:57:43,856 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-02 23:57:43,961 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-02 23:57:43,996 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-02 23:57:44,101 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-02 23:57:44,150 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-02 23:57:44,255 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-02 23:57:47,007 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-02 23:58:23,493 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-02 23:58:23,546 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:58:23,649 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-02 23:58:23,674 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-02 23:58:23,688 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:58:23,825 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-02 23:58:23,826 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-02 23:58:23,829 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-02 23:58:23,829 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-02 23:58:23,831 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-02 23:58:23,850 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-02 23:58:23,874 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-02 23:58:23,876 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-02 23:58:23,878 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-02 23:58:23,879 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-02 23:58:23,899 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:58:24,003 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-02 23:58:24,051 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:58:57,192 [WARNING]   ❌ beIN Sports Max 1 için M3U8 bulunamadı
+2026-11-02 23:58:58,192 [INFO] 
+[7/14]
+2026-11-02 23:58:58,192 [INFO] 🔍 beIN Sports Max 2 → https://atomsportv503.top/matches?id=bein-sports-max-2
+2026-11-02 23:58:58,316 [INFO] Capturing request: https://atomsportv503.top/matches?id=bein-sports-max-2
+2026-11-02 23:58:58,417 [INFO] Capturing response: https://atomsportv503.top/matches?id=bein-sports-max-2 301 
+2026-11-02 23:58:58,537 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-02 23:58:58,565 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-02 23:58:58,670 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-02 23:58:58,701 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-02 23:58:58,806 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-02 23:58:58,854 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-02 23:58:58,959 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-02 23:58:58,995 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-02 23:58:59,100 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-02 23:58:59,128 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-02 23:58:59,233 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-02 23:58:59,278 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-02 23:58:59,383 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-02 23:58:59,426 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-02 23:58:59,530 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-02 23:58:59,559 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-02 23:58:59,664 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-02 23:58:59,691 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-02 23:58:59,796 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-02 23:58:59,821 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-02 23:58:59,926 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-02 23:58:59,966 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-02 23:59:00,071 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-02 23:59:00,100 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-02 23:59:00,205 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-02 23:59:00,243 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-02 23:59:00,348 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-02 23:59:00,398 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-02 23:59:00,503 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-02 23:59:03,297 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-02 23:59:39,269 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-02 23:59:39,320 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:59:39,427 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-02 23:59:39,451 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-02 23:59:39,460 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-02 23:59:39,602 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-02 23:59:39,604 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-02 23:59:39,605 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-02 23:59:39,606 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-02 23:59:39,608 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-02 23:59:39,625 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-02 23:59:39,648 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-02 23:59:39,652 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-02 23:59:39,654 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-02 23:59:39,656 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-02 23:59:39,678 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-02 23:59:39,778 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-02 23:59:39,858 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:00:12,971 [WARNING]   ❌ beIN Sports Max 2 için M3U8 bulunamadı
+2026-11-03 00:00:13,971 [INFO] 
+[8/14]
+2026-11-03 00:00:13,972 [INFO] 🔍 S Sport → https://atomsportv503.top/matches?id=s-sport
+2026-11-03 00:00:14,108 [INFO] Capturing request: https://atomsportv503.top/matches?id=s-sport
+2026-11-03 00:00:14,152 [INFO] Capturing response: https://atomsportv503.top/matches?id=s-sport 301 
+2026-11-03 00:00:14,264 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-03 00:00:14,323 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-03 00:00:14,428 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-03 00:00:14,465 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-03 00:00:14,570 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-03 00:00:14,617 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-03 00:00:14,722 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-03 00:00:14,752 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-03 00:00:14,857 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-03 00:00:14,884 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-03 00:00:14,989 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-03 00:00:15,037 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-03 00:00:15,143 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-03 00:00:15,188 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-03 00:00:15,293 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-03 00:00:15,334 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-03 00:00:15,439 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-03 00:00:15,483 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-03 00:00:15,588 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-03 00:00:15,618 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-03 00:00:15,723 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-03 00:00:15,763 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-03 00:00:15,869 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-03 00:00:15,898 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-03 00:00:16,003 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-03 00:00:16,041 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-03 00:00:16,146 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-03 00:00:16,177 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-03 00:00:16,282 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-03 00:00:19,072 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-03 00:00:55,047 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-03 00:00:55,097 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:00:55,203 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-03 00:00:55,230 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-03 00:00:55,240 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:00:55,380 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-03 00:00:55,381 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-03 00:00:55,383 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-03 00:00:55,384 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-03 00:00:55,386 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-03 00:00:55,411 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-03 00:00:55,436 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-03 00:00:55,439 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-03 00:00:55,440 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-03 00:00:55,442 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-03 00:00:55,461 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:00:55,565 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-03 00:00:55,643 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:01:28,755 [WARNING]   ❌ S Sport için M3U8 bulunamadı
+2026-11-03 00:01:29,755 [INFO] 
+[9/14]
+2026-11-03 00:01:29,755 [INFO] 🔍 S Sport 2 → https://atomsportv503.top/matches?id=s-sport-2
+2026-11-03 00:01:29,874 [INFO] Capturing request: https://atomsportv503.top/matches?id=s-sport-2
+2026-11-03 00:01:29,949 [INFO] Capturing response: https://atomsportv503.top/matches?id=s-sport-2 301 
+2026-11-03 00:01:30,076 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-03 00:01:30,120 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-03 00:01:30,225 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-03 00:01:30,256 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-03 00:01:30,361 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-03 00:01:30,424 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-03 00:01:30,529 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-03 00:01:30,571 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-03 00:01:30,676 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-03 00:01:30,702 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-03 00:01:30,807 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-03 00:01:30,873 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-03 00:01:30,978 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-03 00:01:31,030 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-03 00:01:31,135 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-03 00:01:31,191 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-03 00:01:31,296 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-03 00:01:31,338 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-03 00:01:31,443 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-03 00:01:31,505 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-03 00:01:31,610 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-03 00:01:31,651 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-03 00:01:31,756 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-03 00:01:31,790 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-03 00:01:31,895 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-03 00:01:31,935 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-03 00:01:32,040 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-03 00:01:32,100 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-03 00:01:32,205 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-03 00:01:34,848 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-03 00:02:11,334 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-03 00:02:11,386 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:02:11,489 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-03 00:02:11,521 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-03 00:02:11,527 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:02:11,670 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-03 00:02:11,675 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-03 00:02:11,677 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-03 00:02:11,678 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-03 00:02:11,680 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-03 00:02:11,695 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-03 00:02:11,719 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-03 00:02:11,722 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-03 00:02:11,723 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-03 00:02:11,725 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-03 00:02:11,745 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:02:11,849 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-03 00:02:11,899 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:02:45,038 [WARNING]   ❌ S Sport 2 için M3U8 bulunamadı
+2026-11-03 00:02:46,038 [INFO] 
+[10/14]
+2026-11-03 00:02:46,038 [INFO] 🔍 A Spor → https://atomsportv503.top/matches?id=a-spor
+2026-11-03 00:02:46,183 [INFO] Capturing request: https://atomsportv503.top/matches?id=a-spor
+2026-11-03 00:02:46,250 [INFO] Capturing response: https://atomsportv503.top/matches?id=a-spor 301 
+2026-11-03 00:02:46,360 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-03 00:02:46,409 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-03 00:02:46,514 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-03 00:02:46,551 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-03 00:02:46,656 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-03 00:02:46,715 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-03 00:02:46,821 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-03 00:02:46,851 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-03 00:02:46,956 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-03 00:02:46,982 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-03 00:02:47,087 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-03 00:02:47,141 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-03 00:02:47,246 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-03 00:02:47,312 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-03 00:02:47,417 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-03 00:02:47,459 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-03 00:02:47,565 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-03 00:02:47,609 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-03 00:02:47,714 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-03 00:02:47,753 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-03 00:02:47,859 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-03 00:02:47,887 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-03 00:02:47,992 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-03 00:02:48,051 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-03 00:02:48,156 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-03 00:02:48,198 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-03 00:02:48,303 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-03 00:02:48,345 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-03 00:02:48,450 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-03 00:02:51,136 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-03 00:03:27,621 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-03 00:03:27,674 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:03:27,775 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-03 00:03:27,801 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-03 00:03:27,815 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:03:27,951 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-03 00:03:27,953 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-03 00:03:27,954 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-03 00:03:27,957 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-03 00:03:27,958 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-03 00:03:27,976 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-03 00:03:28,003 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-03 00:03:28,007 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-03 00:03:28,009 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-03 00:03:28,011 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-03 00:03:28,026 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:03:28,130 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-03 00:03:28,211 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:04:01,321 [WARNING]   ❌ A Spor için M3U8 bulunamadı
+2026-11-03 00:04:02,321 [INFO] 
+[11/14]
+2026-11-03 00:04:02,321 [INFO] 🔍 Tivibu Spor 1 → https://atomsportv503.top/matches?id=tivibu-spor-1
+2026-11-03 00:04:02,443 [INFO] Capturing request: https://atomsportv503.top/matches?id=tivibu-spor-1
+2026-11-03 00:04:02,525 [INFO] Capturing response: https://atomsportv503.top/matches?id=tivibu-spor-1 301 
+2026-11-03 00:04:02,650 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-03 00:04:02,694 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-03 00:04:02,799 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-03 00:04:02,828 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-03 00:04:02,933 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-03 00:04:02,986 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-03 00:04:03,091 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-03 00:04:03,130 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-03 00:04:03,235 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-03 00:04:03,262 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-03 00:04:03,367 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-03 00:04:03,415 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-03 00:04:03,521 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-03 00:04:03,569 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-03 00:04:03,674 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-03 00:04:03,714 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-03 00:04:03,819 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-03 00:04:03,863 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-03 00:04:03,968 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-03 00:04:04,006 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-03 00:04:04,111 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-03 00:04:04,148 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-03 00:04:04,253 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-03 00:04:04,283 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-03 00:04:04,388 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-03 00:04:04,436 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-03 00:04:04,542 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-03 00:04:04,585 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-03 00:04:04,691 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-03 00:04:07,425 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-03 00:04:43,909 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-03 00:04:43,959 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:04:44,065 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-03 00:04:44,098 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-03 00:04:44,100 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:04:44,250 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-03 00:04:44,251 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-03 00:04:44,252 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-03 00:04:44,256 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-03 00:04:44,256 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-03 00:04:44,277 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-03 00:04:44,299 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-03 00:04:44,301 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-03 00:04:44,306 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-03 00:04:44,312 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-03 00:04:44,356 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:04:44,534 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-03 00:04:44,537 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:05:17,649 [WARNING]   ❌ Tivibu Spor 1 için M3U8 bulunamadı
+2026-11-03 00:05:18,649 [INFO] 
+[12/14]
+2026-11-03 00:05:18,649 [INFO] 🔍 Tivibu Spor 2 → https://atomsportv503.top/matches?id=tivibu-spor-2
+2026-11-03 00:05:18,811 [INFO] Capturing request: https://atomsportv503.top/matches?id=tivibu-spor-2
+2026-11-03 00:05:18,849 [INFO] Capturing response: https://atomsportv503.top/matches?id=tivibu-spor-2 301 
+2026-11-03 00:05:18,956 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-03 00:05:18,995 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-03 00:05:19,101 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-03 00:05:19,151 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-03 00:05:19,256 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-03 00:05:19,304 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-03 00:05:19,410 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-03 00:05:19,448 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-03 00:05:19,553 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-03 00:05:19,600 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-03 00:05:19,706 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-03 00:05:19,753 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-03 00:05:19,859 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-03 00:05:19,904 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-03 00:05:20,011 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-03 00:05:20,039 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-03 00:05:20,145 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-03 00:05:20,172 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-03 00:05:20,278 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-03 00:05:20,324 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-03 00:05:20,429 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-03 00:05:20,473 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-03 00:05:20,578 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-03 00:05:20,623 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-03 00:05:20,728 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-03 00:05:20,773 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-03 00:05:20,878 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-03 00:05:20,919 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-03 00:05:21,024 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-03 00:05:23,713 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-03 00:06:00,197 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-03 00:06:00,250 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:06:00,351 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-03 00:06:00,378 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-03 00:06:00,392 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:06:00,530 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-03 00:06:00,531 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-03 00:06:00,533 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-03 00:06:00,534 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-03 00:06:00,536 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-03 00:06:00,566 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-03 00:06:00,589 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-03 00:06:00,591 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-03 00:06:00,593 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-03 00:06:00,597 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-03 00:06:00,617 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:06:00,720 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-03 00:06:00,766 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:06:33,910 [WARNING]   ❌ Tivibu Spor 2 için M3U8 bulunamadı
+2026-11-03 00:06:34,910 [INFO] 
+[13/14]
+2026-11-03 00:06:34,910 [INFO] 🔍 Tivibu Spor 3 → https://atomsportv503.top/matches?id=tivibu-spor-3
+2026-11-03 00:06:35,032 [INFO] Capturing request: https://atomsportv503.top/matches?id=tivibu-spor-3
+2026-11-03 00:06:35,082 [INFO] Capturing response: https://atomsportv503.top/matches?id=tivibu-spor-3 301 
+2026-11-03 00:06:35,221 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-03 00:06:35,261 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-03 00:06:35,367 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-03 00:06:35,400 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-03 00:06:35,505 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-03 00:06:35,549 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-03 00:06:35,654 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-03 00:06:35,693 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-03 00:06:35,798 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-03 00:06:35,835 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-03 00:06:35,940 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-03 00:06:35,987 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-03 00:06:36,092 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-03 00:06:36,139 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-03 00:06:36,244 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-03 00:06:36,298 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-03 00:06:36,403 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-03 00:06:36,443 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-03 00:06:36,549 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-03 00:06:36,575 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-03 00:06:36,680 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-03 00:06:36,726 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-03 00:06:36,831 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-03 00:06:36,882 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-03 00:06:36,987 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-03 00:06:37,025 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-03 00:06:37,130 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-03 00:06:37,172 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-03 00:06:37,279 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-03 00:06:40,002 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-03 00:07:16,668 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-03 00:07:16,719 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:07:16,825 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-03 00:07:16,849 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-03 00:07:16,860 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:07:17,000 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-03 00:07:17,002 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-03 00:07:17,002 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-03 00:07:17,006 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-03 00:07:17,007 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-03 00:07:17,029 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-03 00:07:17,050 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-03 00:07:17,053 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-03 00:07:17,057 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-03 00:07:17,059 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-03 00:07:17,081 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:07:17,184 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-03 00:07:17,262 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:07:50,376 [WARNING]   ❌ Tivibu Spor 3 için M3U8 bulunamadı
+2026-11-03 00:07:51,376 [INFO] 
+[14/14]
+2026-11-03 00:07:51,377 [INFO] 🔍 Tivibu Spor 4 → https://atomsportv503.top/matches?id=tivibu-spor-4
+2026-11-03 00:07:51,519 [INFO] Capturing request: https://atomsportv503.top/matches?id=tivibu-spor-4
+2026-11-03 00:07:51,569 [INFO] Capturing response: https://atomsportv503.top/matches?id=tivibu-spor-4 301 
+2026-11-03 00:07:51,690 [INFO] Capturing request: https://www.atomsportv504.top/
+2026-11-03 00:07:51,726 [INFO] Capturing response: https://www.atomsportv504.top/ 301 
+2026-11-03 00:07:51,831 [INFO] Capturing request: https://www.atomsportv505.top/
+2026-11-03 00:07:51,872 [INFO] Capturing response: https://www.atomsportv505.top/ 301 
+2026-11-03 00:07:51,977 [INFO] Capturing request: https://www.atomsportv506.top/
+2026-11-03 00:07:52,022 [INFO] Capturing response: https://www.atomsportv506.top/ 301 
+2026-11-03 00:07:52,128 [INFO] Capturing request: https://www.atomsportv507.top/
+2026-11-03 00:07:52,165 [INFO] Capturing response: https://www.atomsportv507.top/ 301 
+2026-11-03 00:07:52,270 [INFO] Capturing request: https://www.atomsportv508.top/
+2026-11-03 00:07:52,309 [INFO] Capturing response: https://www.atomsportv508.top/ 301 
+2026-11-03 00:07:52,414 [INFO] Capturing request: https://www.atomsportv510.top/
+2026-11-03 00:07:52,455 [INFO] Capturing response: https://www.atomsportv510.top/ 301 
+2026-11-03 00:07:52,560 [INFO] Capturing request: https://www.atomsportv511.top/
+2026-11-03 00:07:52,600 [INFO] Capturing response: https://www.atomsportv511.top/ 301 
+2026-11-03 00:07:52,706 [INFO] Capturing request: https://www.atomsportv512.top/
+2026-11-03 00:07:52,742 [INFO] Capturing response: https://www.atomsportv512.top/ 301 
+2026-11-03 00:07:52,848 [INFO] Capturing request: https://www.atomsportv513.top/
+2026-11-03 00:07:52,886 [INFO] Capturing response: https://www.atomsportv513.top/ 301 
+2026-11-03 00:07:52,992 [INFO] Capturing request: https://www.atomsportv514.top/
+2026-11-03 00:07:53,034 [INFO] Capturing response: https://www.atomsportv514.top/ 301 
+2026-11-03 00:07:53,139 [INFO] Capturing request: https://www.atomsportv515.top/
+2026-11-03 00:07:53,180 [INFO] Capturing response: https://www.atomsportv515.top/ 301 
+2026-11-03 00:07:53,285 [INFO] Capturing request: https://www.atomsportv516.top/
+2026-11-03 00:07:53,318 [INFO] Capturing response: https://www.atomsportv516.top/ 301 
+2026-11-03 00:07:53,423 [INFO] Capturing request: https://atomsportv517.top/
+2026-11-03 00:07:53,461 [INFO] Capturing response: https://atomsportv517.top/ 301 
+2026-11-03 00:07:53,567 [INFO] Capturing request: https://www.atomsportv518.top/
+2026-11-03 00:07:53,605 [INFO] Capturing response: https://www.atomsportv518.top/ 301 
+2026-11-03 00:07:53,710 [INFO] Capturing request: https://www.atomsportv519.top/
+2026-11-03 00:07:56,800 [INFO] Capturing response: https://www.atomsportv519.top/favicon.ico 522 
+2026-11-03 00:08:32,774 [INFO] Capturing response: https://www.atomsportv519.top/ 522 
+2026-11-03 00:08:32,826 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:08:32,932 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/styles/main.css
+2026-11-03 00:08:32,965 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/styles/main.css 200 
+2026-11-03 00:08:32,968 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:08:33,114 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png
+2026-11-03 00:08:33,119 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png
+2026-11-03 00:08:33,120 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png
+2026-11-03 00:08:33,122 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png
+2026-11-03 00:08:33,123 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png
+2026-11-03 00:08:33,148 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-browser.png 200 
+2026-11-03 00:08:33,172 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-ok.png 200 
+2026-11-03 00:08:33,176 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-server.png 200 
+2026-11-03 00:08:33,178 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-cloud.png 200 
+2026-11-03 00:08:33,180 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/images/cf-icon-error.png 200 
+2026-11-03 00:08:33,200 [INFO] Capturing request: https://www.atomsportv519.top/cdn-cgi/rum?
+2026-11-03 00:08:33,303 [INFO] Capturing request: https://www.atomsportv519.top/favicon.ico
+2026-11-03 00:08:33,385 [INFO] Capturing response: https://www.atomsportv519.top/cdn-cgi/rum? 204 
+2026-11-03 00:09:06,499 [WARNING]   ❌ Tivibu Spor 4 için M3U8 bulunamadı
+2026-11-03 00:09:07,580 [INFO] ✅ 0 kanal bulundu, playlist.m3u kaydedildi
