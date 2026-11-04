@@ -1,0 +1,111 @@
+name: Update
+
+on:
+  watch:
+    types: [started]
+  schedule:
+    - cron: '*/31 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-auto-update-iptv]
+
+# Add permissions
+permissions:
+  contents: write
+env:
+  TZ: Asia/Ho_Chi_Minh
+# Đảm bảo chỉ 1 workflow chạy tại 1 thời điểm
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  Update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: GetTime
+      run: echo "DATE=$(date +'%Y-%m-%d %H:%M:%S GMT+7')" >> $GITHUB_ENV
+
+    - name: Update
+      run: |
+        # Out_Iptv_CXT Source
+        #rm -f Out_Iptv_CXT.m3u && wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/love4vn/main/VTV_sort.m3u -O Out_Iptv_CXT.m3u || true
+        #sed -i '1i #EXTINF:-1 tvg-id="" tvg-name="***VTV Listings***" tvg-logo="https://github.com/Love4vn/Wall/blob/92e4f876d382d2945ebf0ee81e09a43aecffe52c/VTV_logo.png" group-title="🇻🇳📺| Kênh VTV 📢",***VTV Listings***' Out_Iptv_CXT.m3u || true
+        
+        # Sports Source
+        #wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/a1xmedia/m3u/refs/heads/main/a1x.m3u -O tkty22.m3u || true
+        #sed -i 's/"🦁欧洲五大联赛🦁"/"USUK SPORT"/g;s/"🐉海外体育"/"USUK SPORT"/g;s/"🐉4K-8K频道"/"4️⃣🇰 🇺 🇭 🇩"/g;s/"Sports"/"4️⃣🇰 🇺 🇭 🇩"/g;s/"Events"/"4️⃣🇰 🇺 🇭 🇩"/g' tkty22.m3u || true
+        
+        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Wall/refs/heads/main/output_clean.m3u -O Sport1.m3u || true
+        #wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Stalker2M3U/refs/heads/1/live_schedule.m3u -O live_schedue.m3u || true
+        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Stalker2M3U/refs/heads/1/Football_match_live.m3u -O Football_match_live.m3u || true
+        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Stalker2M3U/refs/heads/1/live_schedule_Optimize.m3u -O live_schedue.m3u || true
+        #wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Match_Stream/refs/heads/1/Stream_live.m3u -O live_schedue.m3u || true
+        #wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/live_schedule.m3u -O E_live_schedue.m3u || true
+
+        # Integrate sources
+        rm -f IPTV.m3u && touch IPTV.m3u
+        #cat Out_Iptv_CXT.m3u VTV.m3u >> IPTV.m3u || true
+        #cat S_check.m3u >> IPTV.m3u || true
+        cat Sport1.m3u >> IPTV.m3u || true
+        cat Football_match_live.m3u >> IPTV.m3u || true
+        cat live_schedue.m3u >> IPTV.m3u || true
+        #cat E_live_schedue.m3u >> IPTV.m3u || true
+        #cat tkty22.m3u >> IPTV.m3u || true
+        sed -i '/#EXTM3U/d' IPTV.m3u || true
+        sed -i '1i #EXTM3U' IPTV.m3u || true
+        sed -i 's/"Kênh VTV"/"🇻🇳📺| Kênh VTV"/g;s/"Thể Thao"/"⚽🥎| Thể Thao"/g;s/"Giải Trí"/"🎬😜|Giải Trí"/g' IPTV.m3u
+        
+        sed -i 's/group-title="KÊNH DÀNH CHO GIA ĐÌNH"/ /g;s/group-title="KÊNH ĐẶC SẮC"/ /g;s/group-title="KÊNH PHIM TRUYỆN"/ /g;s/group-title="KÊNH GIẢI TRÍ"/ /g;s/group-title="KÊNH TIN TỨC"/ /g' IPTV.m3u
+        sed -i 's/group-title="KNH C SC"/ /g;s/group-title="KNH C NHIU LT XEM CAO NHT"/ /g;s/group-title="KNH GII TR"/ /g;s/group-title="KNH DY HC"/ /g' IPTV.m3u
+        sed -i 's/"KÊNH BOX"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"KNH K"/"K Channels"/g;s/"Minh c Gii Tr"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"KNH BOX"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"In The Box"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"TH NGHIM"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"FPT Play"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Truyn Hnh"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Quc T HD"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"K"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Quc T"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Quc t"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜" /g;s/"🎬😜 Phim 🔍📣"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"Phim"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"KÊNH THIẾT YẾU"/"🇻🇳📺| Kênh VTV 📢"/g;s/"Thit yu"/"🇻🇳📺| Kênh VTV 📢"/g;s/"FPT Play"/"🇻🇳📺| Kênh VTV 📢"/g;s/"VTV"/"🇻🇳📺| Kênh VTV 📢"/g;s/"VTV 50fsp"/"🇻🇳📺| Kênh VTV 📢"/g;s/"Kenh VTV"/"🇻🇳📺| Kênh VTV 📢"/g;s/"❤| VTV"/"🇻🇳📺| Kênh VTV 📢"/g;s/"🇻🇳📺| Nhóm Kênh VTV 📢"/"🇻🇳📺| Kênh VTV 📢"/g;s/VTVCanTho/VTV Cần Thơ/g;s/VTV5 Ty Nam B/VTV5 Tây Nam Bộ/g;s/VTV5 Ty Nguyn/VTV5 Tây Nguyên/g;s/❤️| VTV6 ¹⁰⁸⁰/❤️| VTV6 Cần Thơ ¹⁰⁸⁰/g;s/"Khm ph"/"Du lịch-Khám phá"/g;s/"Lifestyle"/"Du lịch-Khám phá"/g;s/"Du lchKhm ph"/"Du lịch-Khám phá"/g;s/"Animals Nature History"/"Du lịch-Khám phá"/g;s/"247"/"Du lịch-Khám phá"/g;s/"Movie"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"Movies"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"Relax"/"😜✨| Relax 😋"/g;s/"Comedy"/"😜✨| Relax 😋"/g;s/"Kids"/"Nhóm Kênh Thiếu Nhi "/g;s/"Selection Sport"/"🎯🔔|Selection Sport|🔔🎯"/g;s/"Trc tip Euro 2024"/"🔥🔥⚽| Euro 2024"/g;s/"Livestream"/"⚽🥎Livestream🏆🏅"/g;s/咪咕 推荐/Migu Recommend/g;s/"世界女排联赛"/"🎊Foreign Sports🎊"/g;s/"浪琴国家杯"/"🎊Foreign Sports🎊"/g;s/"NBA"/"🎊Foreign Sports🎊"/g;s/"🥅外欧洲杯🥅"/"🥅⚽️European Cup⚽️🥅"/g;s/ช่อง/Channel/g' IPTV.m3u
+        sed -i '/"Myanmar Tv"/{N; /"Myanmar Tv"/d;};/TH H NI 1 HD/{N; /TH H NI 1 HD/d;};/HYTV HD TH BO HNG YN/{N; /HYTV HD TH BO HNG YN/d;};/ANTV TH AN NINH HD/{N; /ANTV TH AN NINH HD/d;};/HueTV TH THNH PH HU HD/{N; /HueTV TH THNH PH HU HD/d;};/TH H NI 1 HD/{N; /TH H NI 1 HD/d;};/TH H NI 2 4K/{N; /TH H NI 2 4K/d;}' IPTV.m3u
+        sed -i '/央视频道/{N; /央视频道/d;};/卫视频道/{N; /卫视频道/d;};/湖北频道/{N; /湖北频道/d;};/其他频道/{N; /其他频道/d;};/河南频道/{N; /河南频道/d;};/北京频道/{N; /北京频道/d;};/港澳频道/{N; /港澳频道/d;};/湖南频道/{N; /湖南频道/d;};/台湾频道/{N; /台湾频道/d;};/上海频道/{N; /上海频道/d;};/🐉国内体育🐉/{N; /🐉国内体育🐉/d;};/🎰央视卫视🎰/{N; /🎰央视卫视🎰/d;};/咪咕体育/{N; /咪咕体育/d;};/"世预亚 中国vs韩国"/{N; /"世预亚 中国vs韩国"/d;}' IPTV.m3u
+        sed -i 's/"国外体育"/"🎊Foreign Sports🎊"/g;s/"🎰央视卫视🎰"/"🏵🇹🇼🇭🇰CN_HK_TW Sports🇭🇰🇹🇼🏵"/g;s/"🏵港苔体育🏵"/"🏵🇹🇼🇭🇰CN_HK_TW Sports🇭🇰🇹🇼🏵"/g;s/广东/Guangdong /g;s/咪咕 4K 欧洲杯/Migu 4K European Cup/g;s/粤语Commentary/English Commentary/g;s/咪咕 HD 欧洲杯/Migu HD European Cup/g;s/「需魔法」/Requires magic/g' IPTV.m3u
+        sed -i 's/"⛹🏻欧冠联赛⛹🏻"/"💡🏆UEFA Champions League🏆💡"/g;s/"🏈法甲联赛🏈"/"🗼🐓🇫🇷France Football🇫🇷🐓🗼"/g;s/"🏉德甲联赛🏉"/"⚽️🍺🇩🇪German Bundesliga🇩🇪🍺⚽️"/g;s/"🏐西甲联赛🏐"/"⚽️🇪🇸La Liga🇪🇸⚽️"/g;s/"🥎意甲联赛🥎"/"⚽️🍕🇮🇹Serie A🇮🇹🍕⚽️"/g;s/"🎾网球赛事🎾"/"🎾🥎Tennis Events🥎🎾"/g;s/"⛳️高尔夫赛事⛳️"/"⛳️Golf Tournament⛳️"/g;s/"🥅外欧洲杯🥅"/"🥅⚽️European Cup⚽️🥅"/g;s/"🥅外欧洲杯🥅"/"🥅⚽️European Cup⚽️🥅"/g;s/"🥅欧洲杯赛事①🥅"/"🥅⚽️Euro 2024 ①⚽️🥅"/g;s/"🥅欧洲杯赛事②🥅"/"🥅⚽️Euro 2024 ②⚽️🥅"/g;s/"🏎F1赛事🏎"/"🏎🏁🚦F1 Event🚦🏁🏎"/g;s/"[^"]*4K[^"]*"/"4️⃣🇰 🇺 🇭 🇩"/g;s/"💰PPV付费赛事💰"/"💰💲PPV Pay-Per-View Event💲💰"/g;s/"🏅NBA赛事🏅"/"🏅🏀NBA Events🏀🏅"/g;s/"⚽️英超联赛⚽️"/"⚽️🦁🇬🇧Premier League🇬🇧🦁⚽️"/g;s/"🪂天空体育①🪂"/"🪂Sky Sports ①🪂"/g;s/"🪂天空体育②🪂"/"🪂Sky Sports ②🪂"/g;s/"🪂天空体育③🪂"/"🪂Sky Sports ③🪂"/g;s/"🪂天空体育④🪂"/"🪂Sky Sports ④🪂"/g;s/"🛡ELEVEN体育🛡"/"🛡ELEVEN SPORT🛡"/g;s/"🛡ELEVEN体育🛡"/"🛡ELEVEN SPORT🛡"/g;s/"🔰beIN体育 ①🔰"/"🔰beIN Sports ①🔰"/g;s/"🔰beIN体育 ②🔰"/"🔰beIN Sports ②🔰"/g;s/"🦉TNT体育🦉"/"🦉TNT Sports🦉"/g;s/"🐍DAZN体育🐍"/"🐍DAZN Sports🐍"/g;s/"🦅ESPN体育🦅"/"🦅ESPN Sports🦅"/g;s/"⛄️FOX体育⛄️"/"⛄️🦊FOX Sports🦊⛄️"/g;s/"☀️其他体育☀️"/"☀️Other Sports☀️"/g;s/"🇺🇸美国体育🇺🇸"/"🇺🇸🗽USA Sports🗽🇺🇸"/g;s/"🇬🇧英国体育🇬🇧"/"🇬🇧💂UK Sports💂🇬🇧"/g;s/"🇫🇷法国体育🇫🇷"/"🇫🇷🥖🗼France Sports🗼🥖🇫🇷"/g;s/体育直播/Sports Live/g;s/博斯高球/Boss Golf /g;s/台//g;s/博斯网球/Boss Tennis/g;s/博斯体育/Boss Sport /g;s/博斯体育/Boss Sport /g;s/爱尔达体育/Alda Sport /g;s/纬来体育/Video Sport/g;s/有比赛时才会放直播画面/Live broadcast will only be shown when there is a game/g;s/请留意赛事直播时间观看/Please pay attention to the live broadcast time of the event/g;s/Now 体育 英超/Now Sports Premier League /g;s/NOW 体育 英超/NOW Sports Premier League /g;s/天空体育 英超/Sky Sport Premier League/g;s/天空体育 新闻/Sky Sports News/g;s/天空体育 综合/Sky Sports Comprehensive/g;s/天空体育 足球/Sky Sports Football/g;s/天空体育 板球/Sky Sports Cricket/g;s/天空体育 高尔夫/Sky Sports Golf/g;s/天空体育 竞技场/Sky Sports Arena/g;s/天空体育 橄榄球/Sky Sports Rugby/g;s/天空体育 USA/Sky Sports USA/g;s/天空体育 赛事/Sky Sports Events/g;s/天空体育 网球/Sky Sports Tennis/g;s/天空体育 F1/Sky Sports F1/g;s/天空体育 赛车/Sky Sports Racing/g;s/天空体育 雄狮/Sky Sports Lions/g;s/天空体育 付费/Sky Sports Paid/g;s/天空体育 动作/Sky Sports Action/g;s/天空体育 NBA/Sky Sports NBA/g;s/天空体育 格斗/Sky Sports Fighting/g;s/天空体育 德甲/Sky Sports Bundesliga/g;s/天空体育 澳洲/Sky Sports Australia/g;s/天空体育 主赛事/Sky Sports Main Event/g' IPTV.m3u
+        sed -i 's/体育/Sport/g;s/葡萄牙/Portugal/g;s/比利时/Belgium/g;s/波兰/Poland/g;s/法国/France/g;s/阿根廷:/Argentina:/g;s/土耳其/Turkey/g;s/卡塔尔/Qatar/g;s/英国/U.K./g;s/西班牙/Spain/g;s/美国:/US:/g;s/巴西/Brazil/g;s/荷兰/Netherlands/g;s/英超/Premier /g;s/罗马尼亚/Romania/g;s/捷克/Czech Republic/g;s/加拿大:/Canada:/g;s/加拿大:/Canada:/g;s/西甲赛事时间/Laliga Match Time/g;s/更新时间/Update Time/g;s/欧洲杯赛事/European Cup Events/g;s/欧洲杯小组赛/European Cup Group Stage/g;s/德国/ Germany /g;s/苏格兰/ Scotland /g;s/解说/Commentary/g;s/赛场原声/Soundtrack/g;s/匈牙利/ Hungary /g;s/瑞士/ Switzerland /g;s/克罗地亚/ Croatia /g;s/意大利/ Italy /g;s/阿尔巴尼亚/ Albania /g;s/斯洛文尼亚/ Slovenia /g;s/丹麦/ Denmark /g;s/塞尔维亚/ Serbia /g;s/英格兰/ England /g;s/乌克兰/ Ukraine /g;s/斯洛伐克/ Slovakia /g;s/奥地利/ Austria /g;s/乔治亚州/ Georgia /g;s/乔治亚州/ Georgia /g' IPTV.m3u
+        sed -i '/group-title="👉/{N; /group-title="👉/d;}' IPTV.m3u
+        sed -i 's/欧洲五大联赛/Europe top 5 leagues/g;s/+赛事/+Event/g;s/有比赛时才会有画面/Only Game Playing/g;s/仅限比赛期间开播/Only available during competitions/g;s/🪂天空Sport/🪂SkySport/g;s/葡语/Portuguse/g;s/英语/English/g;s/Spain语/Spanish/g;s/德语/German/g;s/欧洲Sport/European Sport/g;s/法语/French/g;s/亚马逊Sport/Amazon Sport/g;s/美国频道/American channel/g;s/美国频道/American channel/g' IPTV.m3u
+        sed -i 's/"UDPTV (SD) Live Streams"/"UDPTV Live Streams"/g' IPTV.m3u
+        sed -i '1i #EXTM3U url-tvg="https://raw.githubusercontent.com/Love4vn/Test/refs/heads/main/EPG.xml"' IPTV.m3u
+        sed -i '/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/{N; /"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/d;};/HYTV/{N; /HYTV/d;};/HueTV/{N; /HueTV/d;};/"Du lịch-Khám phá"/{N; /"Du lịch-Khám phá"/d;};/THAIRATH/{N; /THAIRATH/d;};/TRUE4U 24 HD/{N; /TRUE4U 24 HD/d;}' IPTV.m3u
+        sed -i '/^\s*$/d' IPTV.m3u
+
+        # Program source
+        rm -f EPG.xml
+        wget -q --show-progress --no-check-certificate https://lichphatsong.site/schedule/epg.xml.gz -O EPG.xml || true
+        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/PhatBee/phatbeetv/refs/heads/main/merged_epg.xml -O EPG1.xml || true
+        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/bakulwifi/Epglive/refs/heads/main/epg.xml -O EPG2.xml || true
+        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/BuddyChewChew/tv/refs/heads/default/M3U8/TV.xml -O EPG3.xml || true
+        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Mikoshi-nyudo/dlhd/refs/heads/main/epgs/daddylive-channels-epg.xml -O EPG4.xml || true
+        cat EPG1.xml EPG2.xml EPG3.xml EPG4.xml >> EPG.xml || true
+        rm -f EPG1.xml EPG2.xml EPG3.xml EPG4.xml || true
+        #echo "Auto Update IPTV in $DATE!✨CXT✨!" > README.md
+
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "Love4vn@gmail.com"
+        git config --local user.name "Love4vn"
+        
+        # Add only specific files (not workflow files)
+        git add IPTV.m3u EPG.xml
+        
+        # Check if there are changes
+        if git diff --staged --quiet; then
+          echo "🟡 No changes to commit"
+          exit 0
+        fi
+        
+        # Commit changes
+        git commit -m "🔄 Auto-update IPTV at $DATE [skip ci]"
+        
+        # Pull first to avoid conflicts
+        git pull --rebase origin main || true
+        
+        # Push changes
+        git push origin main || {
+          echo "⚠️ Normal push failed, trying force push..."
+          git push -f origin main
+        }
