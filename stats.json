@@ -1,10 +1,10 @@
 {
-  "last_update": "2026-11-04T15:44:44.849960",
+  "last_update": "2026-11-04T21:47:22.261605",
   "total_channels": 10,
   "channels": [
     {
       "name": "beIN Sports 1",
-      "url": "https://css.d6e3eds5e065t5.help//b1/tracks-v1a1/mono.m3u8",
+      "url": "https://css.d6e3eds5e065t5.help//hls/arda.m3u8",
       "group": "Spor"
     },
     {
