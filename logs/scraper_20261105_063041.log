@@ -1,0 +1,653 @@
+2026-11-05 06:30:41,631 [INFO] ℹ️ SeleniumWire yok, performans logları kullanılacak
+2026-11-05 06:30:41,753 [INFO] 🔎 Domain taranıyor: mahsunsports49.xyz → mahsunsports75.xyz
+2026-11-05 06:30:41,818 [INFO]   ✅ Aktif domain bulundu: https://mahsunsports50.xyz (HTTP 301)
+2026-11-05 06:30:41,818 [INFO] 🌐 BASE_URL: https://mahsunsports50.xyz
+2026-11-05 06:30:41,818 [INFO] =======================================================
+2026-11-05 06:30:41,818 [INFO]    M3U8 Scraper → MAHSUNSPORTS
+2026-11-05 06:30:41,819 [INFO]    Base URL : https://mahsunsports50.xyz
+2026-11-05 06:30:41,819 [INFO]    Toplam   : 53 sayfa
+2026-11-05 06:30:41,819 [INFO]    Wire     : False
+2026-11-05 06:30:41,819 [INFO] =======================================================
+2026-11-05 06:30:41,819 [INFO] 🔧 Driver başlatılıyor...
+2026-11-05 06:30:41,819 [INFO] 🌐 Chrome: /usr/bin/google-chrome
+2026-11-05 06:30:41,819 [INFO] ✅ Chromedriver: /usr/bin/chromedriver
+2026-11-05 06:30:41,820 [INFO] 🔧 Driver path: /usr/bin/chromedriver
+2026-11-05 06:30:44,161 [INFO] ✅ Driver hazır
+2026-11-05 06:30:44,161 [INFO] 
+[1/53] işleniyor...
+2026-11-05 06:30:44,161 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:30:44,161 [INFO] 🔍 BeIN Sports 1
+2026-11-05 06:30:44,161 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivebs1
+2026-11-05 06:30:44,161 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:30:45,098 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:30:45,124 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:30:50,156 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:30:50,171 [INFO]   🖼️  1 iframe bulundu
+2026-11-05 06:30:50,176 [INFO]   🖼️  iframe[0]: https://t.dtscout.com/idg/?su=51A01793860244D792462AFB12464CE2
+2026-11-05 06:30:50,206 [WARNING]   ❌ BeIN Sports 1: M3U8 bulunamadı
+2026-11-05 06:30:50,707 [INFO] 
+[2/53] işleniyor...
+2026-11-05 06:30:50,707 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:30:50,707 [INFO] 🔍 BeIN Sports 2
+2026-11-05 06:30:50,707 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivebs2
+2026-11-05 06:30:50,708 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:30:51,970 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:30:51,985 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:30:57,013 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:30:57,019 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:30:57,024 [WARNING]   ❌ BeIN Sports 2: M3U8 bulunamadı
+2026-11-05 06:30:57,525 [INFO] 
+[3/53] işleniyor...
+2026-11-05 06:30:57,525 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:30:57,525 [INFO] 🔍 BeIN Sports 3
+2026-11-05 06:30:57,525 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivebs3
+2026-11-05 06:30:57,525 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:30:58,735 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:30:58,751 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:03,780 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:03,786 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:03,791 [WARNING]   ❌ BeIN Sports 3: M3U8 bulunamadı
+2026-11-05 06:31:04,292 [INFO] 
+[4/53] işleniyor...
+2026-11-05 06:31:04,292 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:04,292 [INFO] 🔍 BeIN Sports 4
+2026-11-05 06:31:04,292 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivebs4
+2026-11-05 06:31:04,292 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:05,497 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:05,513 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:10,543 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:10,549 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:10,554 [WARNING]   ❌ BeIN Sports 4: M3U8 bulunamadı
+2026-11-05 06:31:11,055 [INFO] 
+[5/53] işleniyor...
+2026-11-05 06:31:11,055 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:11,055 [INFO] 🔍 BeIN Sports 5
+2026-11-05 06:31:11,055 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivebs5
+2026-11-05 06:31:11,055 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:12,283 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:12,297 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:17,327 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:17,333 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:17,338 [WARNING]   ❌ BeIN Sports 5: M3U8 bulunamadı
+2026-11-05 06:31:17,838 [INFO] 
+[6/53] işleniyor...
+2026-11-05 06:31:17,838 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:17,838 [INFO] 🔍 BeIN Sports Max 1
+2026-11-05 06:31:17,839 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivebsm1
+2026-11-05 06:31:17,839 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:19,064 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:19,081 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:24,109 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:24,114 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:24,120 [WARNING]   ❌ BeIN Sports Max 1: M3U8 bulunamadı
+2026-11-05 06:31:24,621 [INFO] 
+[7/53] işleniyor...
+2026-11-05 06:31:24,621 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:24,621 [INFO] 🔍 BeIN Sports Max 2
+2026-11-05 06:31:24,621 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivebsm2
+2026-11-05 06:31:24,621 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:25,790 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:25,807 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:25,818 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamlivebsm1.m3u8
+2026-11-05 06:31:25,818 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamlivebsm1.m3u8
+2026-11-05 06:31:26,319 [INFO] 
+[8/53] işleniyor...
+2026-11-05 06:31:26,319 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:26,319 [INFO] 🔍 S Sport
+2026-11-05 06:31:26,319 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivess1
+2026-11-05 06:31:26,319 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:27,551 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:27,567 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:32,595 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:32,601 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:32,606 [WARNING]   ❌ S Sport: M3U8 bulunamadı
+2026-11-05 06:31:33,106 [INFO] 
+[9/53] işleniyor...
+2026-11-05 06:31:33,107 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:33,107 [INFO] 🔍 S Sport 2
+2026-11-05 06:31:33,107 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivess2
+2026-11-05 06:31:33,107 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:34,334 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:34,349 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:39,377 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:39,383 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:39,388 [WARNING]   ❌ S Sport 2: M3U8 bulunamadı
+2026-11-05 06:31:39,888 [INFO] 
+[10/53] işleniyor...
+2026-11-05 06:31:39,888 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:39,888 [INFO] 🔍 S Sport Plus
+2026-11-05 06:31:39,889 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivessplus1
+2026-11-05 06:31:39,889 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:41,050 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:41,067 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:46,098 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:46,104 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:46,109 [WARNING]   ❌ S Sport Plus: M3U8 bulunamadı
+2026-11-05 06:31:46,610 [INFO] 
+[11/53] işleniyor...
+2026-11-05 06:31:46,610 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:46,610 [INFO] 🔍 Tivibu Spor
+2026-11-05 06:31:46,611 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivets
+2026-11-05 06:31:46,611 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:47,785 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:47,800 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:52,831 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:52,836 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:52,841 [WARNING]   ❌ Tivibu Spor: M3U8 bulunamadı
+2026-11-05 06:31:53,342 [INFO] 
+[12/53] işleniyor...
+2026-11-05 06:31:53,342 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:31:53,342 [INFO] 🔍 Tivibu Spor 1
+2026-11-05 06:31:53,342 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivets1
+2026-11-05 06:31:53,342 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:31:54,591 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:31:54,608 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:31:59,636 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:31:59,642 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:31:59,647 [WARNING]   ❌ Tivibu Spor 1: M3U8 bulunamadı
+2026-11-05 06:32:00,148 [INFO] 
+[13/53] işleniyor...
+2026-11-05 06:32:00,148 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:00,148 [INFO] 🔍 Tivibu Spor 2
+2026-11-05 06:32:00,148 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivets2
+2026-11-05 06:32:00,148 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:01,355 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:01,371 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:06,399 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:06,405 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:06,410 [WARNING]   ❌ Tivibu Spor 2: M3U8 bulunamadı
+2026-11-05 06:32:06,911 [INFO] 
+[14/53] işleniyor...
+2026-11-05 06:32:06,911 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:06,911 [INFO] 🔍 Tivibu Spor 3
+2026-11-05 06:32:06,911 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivets3
+2026-11-05 06:32:06,911 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:08,112 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:08,127 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:13,154 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:13,160 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:13,165 [WARNING]   ❌ Tivibu Spor 3: M3U8 bulunamadı
+2026-11-05 06:32:13,666 [INFO] 
+[15/53] işleniyor...
+2026-11-05 06:32:13,666 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:13,666 [INFO] 🔍 Tivibu Spor 4
+2026-11-05 06:32:13,666 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivets4
+2026-11-05 06:32:13,666 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:14,932 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:14,948 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:14,957 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamlivets3.m3u8
+2026-11-05 06:32:14,958 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamlivets3.m3u8
+2026-11-05 06:32:15,458 [INFO] 
+[16/53] işleniyor...
+2026-11-05 06:32:15,458 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:15,459 [INFO] 🔍 Smart Spor 1
+2026-11-05 06:32:15,459 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivesm1
+2026-11-05 06:32:15,459 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:16,662 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:16,676 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:21,706 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:21,712 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:21,717 [WARNING]   ❌ Smart Spor 1: M3U8 bulunamadı
+2026-11-05 06:32:22,217 [INFO] 
+[17/53] işleniyor...
+2026-11-05 06:32:22,217 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:22,217 [INFO] 🔍 Smart Spor 2
+2026-11-05 06:32:22,218 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivesm2
+2026-11-05 06:32:22,218 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:22,819 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:22,834 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:27,862 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:27,868 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:27,873 [WARNING]   ❌ Smart Spor 2: M3U8 bulunamadı
+2026-11-05 06:32:28,373 [INFO] 
+[18/53] işleniyor...
+2026-11-05 06:32:28,373 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:28,373 [INFO] 🔍 Euro Sport 1
+2026-11-05 06:32:28,373 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivees1
+2026-11-05 06:32:28,373 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:29,570 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:29,586 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:34,614 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:34,619 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:34,624 [WARNING]   ❌ Euro Sport 1: M3U8 bulunamadı
+2026-11-05 06:32:35,125 [INFO] 
+[19/53] işleniyor...
+2026-11-05 06:32:35,125 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:35,125 [INFO] 🔍 Euro Sport 2
+2026-11-05 06:32:35,125 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivees2
+2026-11-05 06:32:35,125 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:36,329 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:36,344 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:41,372 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:41,377 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:41,383 [WARNING]   ❌ Euro Sport 2: M3U8 bulunamadı
+2026-11-05 06:32:41,883 [INFO] 
+[20/53] işleniyor...
+2026-11-05 06:32:41,884 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:41,884 [INFO] 🔍 iDMAN Tv
+2026-11-05 06:32:41,884 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveidm
+2026-11-05 06:32:41,884 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:43,062 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:43,077 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:48,108 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:48,113 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:48,119 [WARNING]   ❌ iDMAN Tv: M3U8 bulunamadı
+2026-11-05 06:32:48,619 [INFO] 
+[21/53] işleniyor...
+2026-11-05 06:32:48,620 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:48,620 [INFO] 🔍 TRT Spor
+2026-11-05 06:32:48,620 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetrts
+2026-11-05 06:32:48,620 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:49,803 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:49,823 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:32:54,856 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:32:54,861 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:32:54,866 [WARNING]   ❌ TRT Spor: M3U8 bulunamadı
+2026-11-05 06:32:55,367 [INFO] 
+[22/53] işleniyor...
+2026-11-05 06:32:55,367 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:32:55,367 [INFO] 🔍 TRT Spor Yıldız
+2026-11-05 06:32:55,367 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetrtsy
+2026-11-05 06:32:55,367 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:32:56,161 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:32:56,177 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:01,204 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:01,210 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:01,216 [WARNING]   ❌ TRT Spor Yıldız: M3U8 bulunamadı
+2026-11-05 06:33:01,716 [INFO] 
+[23/53] işleniyor...
+2026-11-05 06:33:01,717 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:01,717 [INFO] 🔍 TRT 1
+2026-11-05 06:33:01,717 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetrts1
+2026-11-05 06:33:01,717 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:02,910 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:02,925 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:07,956 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:07,961 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:07,966 [WARNING]   ❌ TRT 1: M3U8 bulunamadı
+2026-11-05 06:33:08,467 [INFO] 
+[24/53] işleniyor...
+2026-11-05 06:33:08,467 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:08,467 [INFO] 🔍 Atv
+2026-11-05 06:33:08,467 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveatv
+2026-11-05 06:33:08,467 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:09,644 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:09,661 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:14,693 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:14,698 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:14,703 [WARNING]   ❌ Atv: M3U8 bulunamadı
+2026-11-05 06:33:15,204 [INFO] 
+[25/53] işleniyor...
+2026-11-05 06:33:15,204 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:15,204 [INFO] 🔍 A Spor
+2026-11-05 06:33:15,204 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveas
+2026-11-05 06:33:15,205 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:16,387 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:16,407 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:21,439 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:21,445 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:21,450 [WARNING]   ❌ A Spor: M3U8 bulunamadı
+2026-11-05 06:33:21,950 [INFO] 
+[26/53] işleniyor...
+2026-11-05 06:33:21,950 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:21,950 [INFO] 🔍 A2
+2026-11-05 06:33:21,951 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivea2
+2026-11-05 06:33:21,951 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:23,117 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:23,132 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:28,160 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:28,166 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:28,171 [WARNING]   ❌ A2: M3U8 bulunamadı
+2026-11-05 06:33:28,672 [INFO] 
+[27/53] işleniyor...
+2026-11-05 06:33:28,672 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:28,672 [INFO] 🔍 Tjk Tv
+2026-11-05 06:33:28,672 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetjk
+2026-11-05 06:33:28,672 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:29,863 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:29,882 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:29,896 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamlivea2.m3u8
+2026-11-05 06:33:29,896 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamlivea2.m3u8
+2026-11-05 06:33:30,397 [INFO] 
+[28/53] işleniyor...
+2026-11-05 06:33:30,397 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:30,397 [INFO] 🔍 Ht Spor
+2026-11-05 06:33:30,397 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveht
+2026-11-05 06:33:30,397 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:31,616 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:31,632 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:36,667 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:36,672 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:36,677 [WARNING]   ❌ Ht Spor: M3U8 bulunamadı
+2026-11-05 06:33:37,178 [INFO] 
+[29/53] işleniyor...
+2026-11-05 06:33:37,178 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:37,178 [INFO] 🔍 NBA Tv
+2026-11-05 06:33:37,178 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivenba
+2026-11-05 06:33:37,178 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:38,394 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:38,413 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:43,446 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:43,451 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:43,457 [WARNING]   ❌ NBA Tv: M3U8 bulunamadı
+2026-11-05 06:33:43,957 [INFO] 
+[30/53] işleniyor...
+2026-11-05 06:33:43,957 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:43,957 [INFO] 🔍 TV8
+2026-11-05 06:33:43,958 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetv8
+2026-11-05 06:33:43,958 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:45,158 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:45,173 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:50,203 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:50,209 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:50,214 [WARNING]   ❌ TV8: M3U8 bulunamadı
+2026-11-05 06:33:50,714 [INFO] 
+[31/53] işleniyor...
+2026-11-05 06:33:50,715 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:50,715 [INFO] 🔍 TV8,5
+2026-11-05 06:33:50,715 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetv85
+2026-11-05 06:33:50,715 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:51,878 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:51,894 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:33:56,925 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:33:56,930 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:33:56,935 [WARNING]   ❌ TV8,5: M3U8 bulunamadı
+2026-11-05 06:33:57,436 [INFO] 
+[32/53] işleniyor...
+2026-11-05 06:33:57,436 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:33:57,436 [INFO] 🔍 Tabi Spor
+2026-11-05 06:33:57,436 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb
+2026-11-05 06:33:57,436 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:33:58,038 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:33:58,054 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:03,081 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:03,087 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:03,092 [WARNING]   ❌ Tabi Spor: M3U8 bulunamadı
+2026-11-05 06:34:03,593 [INFO] 
+[33/53] işleniyor...
+2026-11-05 06:34:03,593 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:03,593 [INFO] 🔍 Tabi Spor 1
+2026-11-05 06:34:03,593 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb1
+2026-11-05 06:34:03,593 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:04,774 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:04,795 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:09,840 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:09,845 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:09,850 [WARNING]   ❌ Tabi Spor 1: M3U8 bulunamadı
+2026-11-05 06:34:10,351 [INFO] 
+[34/53] işleniyor...
+2026-11-05 06:34:10,351 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:10,351 [INFO] 🔍 Tabi Spor 2
+2026-11-05 06:34:10,351 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb2
+2026-11-05 06:34:10,351 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:11,543 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:11,557 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:16,584 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:16,589 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:16,594 [WARNING]   ❌ Tabi Spor 2: M3U8 bulunamadı
+2026-11-05 06:34:17,095 [INFO] 
+[35/53] işleniyor...
+2026-11-05 06:34:17,095 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:17,095 [INFO] 🔍 Tabi Spor 3
+2026-11-05 06:34:17,095 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb3
+2026-11-05 06:34:17,095 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:18,297 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:18,313 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:18,323 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamlivetb2.m3u8
+2026-11-05 06:34:18,324 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamlivetb2.m3u8
+2026-11-05 06:34:18,824 [INFO] 
+[36/53] işleniyor...
+2026-11-05 06:34:18,824 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:18,824 [INFO] 🔍 Tabi Spor 4
+2026-11-05 06:34:18,825 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb4
+2026-11-05 06:34:18,825 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:20,341 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:20,356 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:25,383 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:25,388 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:25,393 [WARNING]   ❌ Tabi Spor 4: M3U8 bulunamadı
+2026-11-05 06:34:25,894 [INFO] 
+[37/53] işleniyor...
+2026-11-05 06:34:25,894 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:25,894 [INFO] 🔍 Tabi Spor 5
+2026-11-05 06:34:25,894 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb5
+2026-11-05 06:34:25,895 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:27,089 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:27,106 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:27,115 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamlivetb4.m3u8
+2026-11-05 06:34:27,116 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamlivetb4.m3u8
+2026-11-05 06:34:27,616 [INFO] 
+[38/53] işleniyor...
+2026-11-05 06:34:27,616 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:27,617 [INFO] 🔍 Tabi Spor 6
+2026-11-05 06:34:27,617 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb6
+2026-11-05 06:34:27,617 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:28,793 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:28,810 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:33,841 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:33,846 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:33,851 [WARNING]   ❌ Tabi Spor 6: M3U8 bulunamadı
+2026-11-05 06:34:34,352 [INFO] 
+[39/53] işleniyor...
+2026-11-05 06:34:34,352 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:34,352 [INFO] 🔍 Tabi Spor 7
+2026-11-05 06:34:34,352 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb7
+2026-11-05 06:34:34,352 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:35,540 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:35,554 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:40,582 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:40,587 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:40,592 [WARNING]   ❌ Tabi Spor 7: M3U8 bulunamadı
+2026-11-05 06:34:41,093 [INFO] 
+[40/53] işleniyor...
+2026-11-05 06:34:41,093 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:41,093 [INFO] 🔍 Tabi Spor 8
+2026-11-05 06:34:41,093 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivetb8
+2026-11-05 06:34:41,093 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:42,313 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:42,328 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:47,355 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:47,361 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:47,366 [WARNING]   ❌ Tabi Spor 8: M3U8 bulunamadı
+2026-11-05 06:34:47,866 [INFO] 
+[41/53] işleniyor...
+2026-11-05 06:34:47,866 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:47,866 [INFO] 🔍 FB Tv
+2026-11-05 06:34:47,866 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivefb
+2026-11-05 06:34:47,867 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:49,052 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:49,068 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:34:54,096 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:34:54,102 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:34:54,107 [WARNING]   ❌ FB Tv: M3U8 bulunamadı
+2026-11-05 06:34:54,608 [INFO] 
+[42/53] işleniyor...
+2026-11-05 06:34:54,608 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:34:54,608 [INFO] 🔍 GS Tv
+2026-11-05 06:34:54,608 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivegs
+2026-11-05 06:34:54,608 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:34:55,813 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:34:55,827 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:00,856 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:00,861 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:00,867 [WARNING]   ❌ GS Tv: M3U8 bulunamadı
+2026-11-05 06:35:01,367 [INFO] 
+[43/53] işleniyor...
+2026-11-05 06:35:01,367 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:01,367 [INFO] 🔍 CBC Sport
+2026-11-05 06:35:01,368 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivecbcs
+2026-11-05 06:35:01,368 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:02,560 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:02,574 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:07,603 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:07,608 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:07,613 [WARNING]   ❌ CBC Sport: M3U8 bulunamadı
+2026-11-05 06:35:08,114 [INFO] 
+[44/53] işleniyor...
+2026-11-05 06:35:08,114 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:08,114 [INFO] 🔍 Sports Tv
+2026-11-05 06:35:08,114 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamlivesptstv
+2026-11-05 06:35:08,114 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:09,333 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:09,349 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:14,376 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:14,381 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:14,386 [WARNING]   ❌ Sports Tv: M3U8 bulunamadı
+2026-11-05 06:35:14,886 [INFO] 
+[45/53] işleniyor...
+2026-11-05 06:35:14,886 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:14,886 [INFO] 🔍 Exxen Tv
+2026-11-05 06:35:14,887 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn
+2026-11-05 06:35:14,887 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:16,086 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:16,101 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:16,111 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamlivesptstv.m3u8
+2026-11-05 06:35:16,111 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamlivesptstv.m3u8
+2026-11-05 06:35:16,611 [INFO] 
+[46/53] işleniyor...
+2026-11-05 06:35:16,612 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:16,612 [INFO] 🔍 Exxen Sports 1
+2026-11-05 06:35:16,612 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn1
+2026-11-05 06:35:16,612 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:17,783 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:17,798 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:22,825 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:22,831 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:22,836 [WARNING]   ❌ Exxen Sports 1: M3U8 bulunamadı
+2026-11-05 06:35:23,336 [INFO] 
+[47/53] işleniyor...
+2026-11-05 06:35:23,336 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:23,337 [INFO] 🔍 Exxen Sports 2
+2026-11-05 06:35:23,337 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn2
+2026-11-05 06:35:23,337 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:24,504 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:24,519 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:24,528 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamliveexn1.m3u8
+2026-11-05 06:35:24,529 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamliveexn1.m3u8
+2026-11-05 06:35:25,029 [INFO] 
+[48/53] işleniyor...
+2026-11-05 06:35:25,029 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:25,029 [INFO] 🔍 Exxen Sports 3
+2026-11-05 06:35:25,030 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn3
+2026-11-05 06:35:25,030 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:26,240 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:26,254 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:31,283 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:31,288 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:31,294 [WARNING]   ❌ Exxen Sports 3: M3U8 bulunamadı
+2026-11-05 06:35:31,794 [INFO] 
+[49/53] işleniyor...
+2026-11-05 06:35:31,795 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:31,795 [INFO] 🔍 Exxen Sports 4
+2026-11-05 06:35:31,795 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn4
+2026-11-05 06:35:31,795 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:32,982 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:32,997 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:38,028 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:38,033 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:38,038 [WARNING]   ❌ Exxen Sports 4: M3U8 bulunamadı
+2026-11-05 06:35:38,539 [INFO] 
+[50/53] işleniyor...
+2026-11-05 06:35:38,539 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:38,539 [INFO] 🔍 Exxen Sports 5
+2026-11-05 06:35:38,540 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn5
+2026-11-05 06:35:38,540 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:39,718 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:39,734 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:44,765 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:44,771 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:44,776 [WARNING]   ❌ Exxen Sports 5: M3U8 bulunamadı
+2026-11-05 06:35:45,277 [INFO] 
+[51/53] işleniyor...
+2026-11-05 06:35:45,277 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:45,277 [INFO] 🔍 Exxen Sports 6
+2026-11-05 06:35:45,277 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn6
+2026-11-05 06:35:45,277 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:46,489 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:46,505 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:51,532 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:35:51,538 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:35:51,544 [WARNING]   ❌ Exxen Sports 6: M3U8 bulunamadı
+2026-11-05 06:35:52,044 [INFO] 
+[52/53] işleniyor...
+2026-11-05 06:35:52,044 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:52,044 [INFO] 🔍 Exxen Sports 7
+2026-11-05 06:35:52,045 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn7
+2026-11-05 06:35:52,045 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:53,257 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:53,273 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:35:53,296 [INFO]   🎯 [PerfLog] https://andro.evrenesoglu235.click/checklist/androstreamliveexn6.m3u8
+2026-11-05 06:35:53,297 [INFO]   ✅ BULUNDU → https://andro.evrenesoglu235.click/checklist/androstreamliveexn6.m3u8
+2026-11-05 06:35:53,797 [INFO] 
+[53/53] işleniyor...
+2026-11-05 06:35:53,797 [INFO] 
+───────────────────────────────────────────────────────
+2026-11-05 06:35:53,798 [INFO] 🔍 Exxen Sports 8
+2026-11-05 06:35:53,798 [INFO]    URL : https://mahsunsports50.xyz/event.html?id=androstreamliveexn8
+2026-11-05 06:35:53,798 [INFO] ───────────────────────────────────────────────────────
+2026-11-05 06:35:54,989 [INFO]   ❎ Popup kapatıldı: 1 adet
+2026-11-05 06:35:55,003 [INFO]   📡 İzleniyor (5s)...
+2026-11-05 06:36:00,034 [INFO]   🖼️  iframe içinde aranıyor...
+2026-11-05 06:36:00,039 [INFO]   🖼️  0 iframe bulundu
+2026-11-05 06:36:00,045 [WARNING]   ❌ Exxen Sports 8: M3U8 bulunamadı
+2026-11-05 06:36:00,677 [INFO] 🔒 Driver kapatıldı
+2026-11-05 06:36:00,677 [INFO] 
+=======================================================
+2026-11-05 06:36:00,678 [INFO] 🏁 Tamamlandı!
+2026-11-05 06:36:00,678 [INFO] 📺 Bulunan : 8 / 53
+2026-11-05 06:36:00,678 [INFO] ⏱️  Süre    : 318.9s
+2026-11-05 06:36:00,678 [INFO] =======================================================
+2026-11-05 06:36:00,678 [INFO] ✅ mike.m3u kaydedildi
+2026-11-05 06:36:00,678 [INFO] ✅ stats.json kaydedildi
