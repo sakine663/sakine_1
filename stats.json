@@ -1,48 +1,274 @@
 {
   "site": "mahsunsports",
-  "last_update": "2026-11-05T06:36:00.678609",
+  "last_update": "2026-11-05T06:45:36.734357",
   "base_url": "https://mahsunsports50.xyz",
-  "total_channels": 8,
-  "duration_sec": 318.9,
+  "active_server": "https://andro.evrenesoglu235.click/checklist",
+  "total_channels": 53,
+  "duration_sec": 1.3,
   "channels": [
     {
-      "name": "BeIN Sports Max 2",
+      "name": "BeIN Sports 1",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivebs1.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "BeIN Sports 2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivebs2.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "BeIN Sports 3",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivebs3.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "BeIN Sports 4",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivebs4.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "BeIN Sports 5",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivebs5.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "BeIN Sports Max 1",
       "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivebsm1.m3u8",
       "group": "Spor"
     },
     {
-      "name": "Tivibu Spor 4",
+      "name": "BeIN Sports Max 2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivebsm2.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "S Sport",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivess1.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "S Sport 2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivess2.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "S Sport Plus",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivessplus1.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tivibu Spor",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivets.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tivibu Spor 1",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivets1.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tivibu Spor 2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivets2.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tivibu Spor 3",
       "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivets3.m3u8",
       "group": "Spor"
     },
     {
-      "name": "Tjk Tv",
-      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivea2.m3u8",
+      "name": "Tivibu Spor 4",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivets4.m3u8",
       "group": "Spor"
     },
     {
-      "name": "Tabi Spor 3",
+      "name": "Smart Spor 1",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivesm1.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Smart Spor 2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivesm2.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Euro Sport 1",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivees1.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Euro Sport 2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivees2.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "iDMAN Tv",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveidm.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "TRT Spor",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetrts.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "TRT Spor Yıldız",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetrtsy.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "TRT 1",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetrts1.m3u8",
+      "group": "Genel"
+    },
+    {
+      "name": "Atv",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveatv.m3u8",
+      "group": "Genel"
+    },
+    {
+      "name": "A Spor",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveas.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "A2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivea2.m3u8",
+      "group": "Genel"
+    },
+    {
+      "name": "Tjk Tv",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetjk.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Ht Spor",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveht.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "NBA Tv",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivenba.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "TV8",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetv8.m3u8",
+      "group": "Genel"
+    },
+    {
+      "name": "TV8,5",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetv85.m3u8",
+      "group": "Genel"
+    },
+    {
+      "name": "Tabi Spor",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tabi Spor 1",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb1.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tabi Spor 2",
       "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb2.m3u8",
       "group": "Spor"
     },
     {
-      "name": "Tabi Spor 5",
+      "name": "Tabi Spor 3",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb3.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tabi Spor 4",
       "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb4.m3u8",
       "group": "Spor"
     },
     {
-      "name": "Exxen Tv",
+      "name": "Tabi Spor 5",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb5.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tabi Spor 6",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb6.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tabi Spor 7",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb7.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Tabi Spor 8",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb8.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "FB Tv",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivefb.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "GS Tv",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivegs.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "CBC Sport",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivecbcs.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Sports Tv",
       "url": "https://andro.evrenesoglu235.click/checklist/androstreamlivesptstv.m3u8",
       "group": "Spor"
     },
     {
-      "name": "Exxen Sports 2",
+      "name": "Exxen Tv",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Exxen Sports 1",
       "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn1.m3u8",
       "group": "Spor"
     },
     {
-      "name": "Exxen Sports 7",
+      "name": "Exxen Sports 2",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn2.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Exxen Sports 3",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn3.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Exxen Sports 4",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn4.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Exxen Sports 5",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn5.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Exxen Sports 6",
       "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn6.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Exxen Sports 7",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn7.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "Exxen Sports 8",
+      "url": "https://andro.evrenesoglu235.click/checklist/androstreamliveexn8.m3u8",
       "group": "Spor"
     }
   ]
