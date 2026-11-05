@@ -36,7 +36,7 @@ jobs:
         wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Stalker2M3U/refs/heads/1/Football_match_live.m3u -O Football_match_live.m3u || true
         wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Love4vn/Stalker2M3U/refs/heads/1/live_schedule_Optimize.m3u -O live_schedue.m3u || true
         
-        # Eklediğiniz yeni kaynaklar (GitLab linkleri)
+        # GitLab kaynakları (Maç özetleri ve kanallar)
         wget -q --show-progress --no-check-certificate https://gitlab.com/mstfblkn006/listeler/-/raw/main/mac_ozetleri.m3u8?ref_type=heads -O mac_ozetleri.m3u || true
         wget -q --show-progress --no-check-certificate https://gitlab.com/mstfblkn006/listeler/-/raw/main/kanallar7.m3u8?ref_type=heads -O kanallar7.m3u || true
         wget -q --show-progress --no-check-certificate https://gitlab.com/mstfblkn006/listeler/-/raw/main/kanallar4.m3u8?ref_type=heads -O kanallar4.m3u || true
@@ -46,27 +46,63 @@ jobs:
         cat Sport1.m3u >> IPTV.m3u || true
         cat Football_match_live.m3u >> IPTV.m3u || true
         cat live_schedue.m3u >> IPTV.m3u || true
-        
-        # Yeni eklenen kaynakları IPTV.m3u dosyasına dahil ediyoruz
         cat mac_ozetleri.m3u >> IPTV.m3u || true
         cat kanallar7.m3u >> IPTV.m3u || true
         cat kanallar4.m3u >> IPTV.m3u || true
 
-        # --- Temizlik ve Metin Düzenlemeleri ---
-        sed -i '/#EXTM3U/d' IPTV.m3u || true
-        
-        sed -i 's/"Kênh VTV"/"🇻🇳📺| Kênh VTV"/g;s/"Thể Thao"/"⚽🥎| Thể Thao"/g;s/"Giải Trí"/"🎬😜|Giải Trí"/g' IPTV.m3u
-        sed -i 's/group-title="KÊNH DÀNH CHO GIA ĐÌNH"/ /g;s/group-title="KÊNH ĐẶC SẮC"/ /g;s/group-title="KÊNH PHIM TRUYỆN"/ /g;s/group-title="KÊNH GIẢI TRÍ"/ /g;s/group-title="KÊNH TIN TỨC"/ /g' IPTV.m3u
-        sed -i 's/group-title="KNH C SC"/ /g;s/group-title="KNH C NHIU LT XEM CAO NHT"/ /g;s/group-title="KNH GII TR"/ /g;s/group-title="KNH DY HC"/ /g' IPTV.m3u
-        sed -i 's/"KÊNH BOX"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"KNH K"/"K Channels"/g;s/"Minh c Gii Tr"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"In The Box"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"TH NGHIM"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"FPT Play"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Truyn Hnh"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Quc T HD"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"K"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Quc T"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"Quc t"/"🔍🔒ᴹᵒᵛⁱᵉˢ📣🎬😜"/g;s/"🎬😜 Phim 🔍📣"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"Phim"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"KÊNH THIẾT YẾU"/"🇻🇳📺| Kênh VTV 📢"/g;s/"Thit yu"/"🇻🇳📺| Kênh VTV 📢"/g;s/"VTV"/"🇻🇳📺| Kênh VTV 📢"/g;s/"VTV 50fsp"/"🇻🇳📺| Kênh VTV 📢"/g;s/"Kenh VTV"/"🇻🇳📺| Kênh VTV 📢"/g;s/"❤| VTV"/"🇻🇳📺| Kênh VTV 📢"/g;s/"🇻🇳📺| Nhóm Kênh VTV 📢"/"🇻🇳📺| Kênh VTV 📢"/g;s/VTVCanTho/VTV Cần Thơ/g;s/VTV5 Ty Nam B/VTV5 Tây Nam Bộ/g;s/VTV5 Ty Nguyn/VTV5 Tây Nguyên/g;s/❤️| VTV6 ¹⁰⁸⁰/❤️| VTV6 Cần Thơ ¹⁰⁸⁰/g;s/"Khm ph"/"Du lịch-Khám phá"/g;s/"Lifestyle"/"Du lịch-Khám phá"/g;s/"Du lchKhm ph"/"Du lịch-Khám phá"/g;s/"Animals Nature History"/"Du lịch-Khám phá"/g;s/"247"/"Du lịch-Khám phá"/g;s/"Movie"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"Movies"/"🎬🎞️ 🅼🅾🆅🅸🅴 🔍📣"/g;s/"Relax"/"😜✨| Relax 😋"/g;s/"Comedy"/"😜✨| Relax 😋"/g;s/"Kids"/"Nhóm Kênh Thiếu Nhi "/g;s/"Selection Sport"/"🎯🔔|Selection Sport|🔔🎯"/g;s/"Trc tip Euro 2024"/"🔥🔥⚽| Euro 2024"/g;s/"Livestream"/"⚽🥎Livestream🏆🏅"/g;s/咪咕 推荐/Migu Recommend/g;s/"世界女排联赛"/"🎊Foreign Sports🎊"/g;s/"浪琴国家杯"/"🎊Foreign Sports🎊"/g;s/"NBA"/"🎊Foreign Sports🎊"/g;s/"🥅外欧洲杯🥅"/"🥅⚽️European Cup⚽️🥅"/g;s/ช่อง/Channel/g' IPTV.m3u
+        # --- Python ile Akıllı Gruplandırma ve Temizlik ---
+        python3 - << 'EOF'
+        import re
 
-        # İstenmeyen kanalların filtrelenmesi
-        sed -i '/"Myanmar Tv"/{N; /"Myanmar Tv"/d;};/TH H NI 1 HD/{N; /TH H NI 1 HD/d;};/HYTV HD TH BO HNG YN/{N; /HYTV HD TH BO HNG YN/d;};/ANTV TH AN NINH HD/{N; /ANTV TH AN NINH HD/d;};/HueTV TH THNH PH HU HD/{N; /HueTV TH THNH PH HU HD/d;};/TH H NI 2 4K/{N; /TH H NI 2 4K/d;}' IPTV.m3u
-        sed -i '/央视频道/{N; /央视频道/d;};/卫视频道/{N; /卫视频道/d;};/湖北频道/{N; /湖北频道/d;};/其他频道/{N; /其他频道/d;};/河南频道/{N; /河南频道/d;};/北京频道/{N; /北京频道/d;};/港澳频道/{N; /港澳频道/d;};/湖南频道/{N; /湖南频道/d;};/台湾频道/{N; /台湾频道/d;};/上海频道/{N; /上海频道/d;};/🐉国内体育🐉/{N; /🐉国内体育🐉/d;};/🎰央视卫视🎰/{N; /🎰央视卫视🎰/d;};/咪咕体育/{N; /咪咕体育/d;};/"世预亚 中国vs韩国"/{N; /"世预亚 中国vs韩国"/d;}' IPTV.m3u
+        try:
+            with open('IPTV.m3u', 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
 
-        # En üst başlığın ve EPG bağlantısının eklenmesi
-        sed -i '1i #EXTM3U url-tvg="https://raw.githubusercontent.com/Love4vn/Test/refs/heads/main/EPG.xml"' IPTV.m3u
-        sed -i '/^\s*$/d' IPTV.m3u
+            def replace_group(match):
+                extinf_line = match.group(0)
+                gt_match = re.search(r'group-title="([^"]*)"', extinf_line, re.IGNORECASE)
+                
+                # Varsayılan kategori
+                new_group = '📺 Diğer Kanallar'
+                
+                # Eski grubu veya tüm satırı analiz et (anahtar kelime bazlı eşleştirme)
+                text_to_check = extinf_line.lower()
+                if gt_match:
+                    text_to_check = gt_match.group(1).lower() + " " + text_to_check
+
+                if any(k in text_to_check for k in ['spor', 'sport', 'maç', 'match', 'futbol', 'football', 'liga', 'champions', 'f1', 'basket', 'nba', 'özet', 'ozet', 'bein', 'tnt sport', 'sky sport', 's Sport']):
+                    new_group = '⚽ Spor & Maçlar'
+                elif any(k in text_to_check for k in ['film', 'movie', 'sinema', 'box', 'vod', 'dizi', 'cinema']):
+                    new_group = '🎬 Filmler & Diziler'
+                elif any(k in text_to_check for k in ['vtv', 'ulusal', 'yerel', 'türkiye', 'turk', 'haber', 'news', 'kanal']):
+                    new_group = '📺 Ulusal Kanallar'
+                elif any(k in text_to_check for k in ['belgesel', 'docu', 'animal', 'history', 'travel', 'du-lich', 'khám phá', 'discovery']):
+                    new_group = '🌍 Belgesel & Yaşam'
+                elif any(k in text_to_check for k in ['cocuk', 'kids', 'çocuk', 'animasyon', 'cartoon']):
+                    new_group = '👶 Çocuk'
+
+                # Mevcut group-title'ı güncelle veya yoksa ekle
+                if gt_match:
+                    extinf_line = re.sub(r'group-title="[^"]*"', f'group-title="{new_group}"', extinf_line, flags=re.IGNORECASE)
+                else:
+                    extinf_line = extinf_line.replace('#EXTINF:', f'#EXTINF:-1 group-title="{new_group}"')
+                return extinf_line
+
+            # #EXTINF bloklarını bul ve düzenle
+            new_content = re.sub(r'(#EXTINF:-?[\d\.\s].*?)(?=\n|$)', replace_group, content)
+
+            # Temizlik ve en üste EPG ekleme
+            lines = new_content.splitlines()
+            cleaned_lines = [l for l in lines if l.strip() and not l.startswith('#EXTM3U')]
+            
+            final_output = '#EXTM3U url-tvg="https://raw.githubusercontent.com/Love4vn/Test/refs/heads/main/EPG.xml"\n' + '\n'.join(cleaned_lines)
+
+            with open('IPTV.m3u', 'w', encoding='utf-8') as f:
+                f.write(final_output)
+            print("Gruplandırma başarıyla tamamlandı.")
+        except Exception as e:
+            print(f"Hata oluştu: {e}")
+        EOF
 
         # --- EPG (Program Rehberi) Kaynakları ---
         rm -f EPG.xml EPG1.xml EPG2.xml EPG3.xml EPG4.xml EPG.xml.gz
@@ -94,6 +130,6 @@ jobs:
           exit 0
         fi
         
-        git commit -m "🔄 Auto-update IPTV at $DATE [skip ci]"
+        git commit -m "🔄 Auto-update IPTV and optimize groups at $DATE [skip ci]"
         git pull --rebase origin main || true
         git push origin main
