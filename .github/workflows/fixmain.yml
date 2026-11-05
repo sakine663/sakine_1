@@ -62,10 +62,8 @@ jobs:
                 extinf_line = match.group(0)
                 gt_match = re.search(r'group-title="([^"]*)"', extinf_line, re.IGNORECASE)
                 
-                # Varsayılan kategori
                 new_group = '📺 Diğer Kanallar'
                 
-                # Eski grubu veya tüm satırı analiz et (anahtar kelime bazlı eşleştirme)
                 text_to_check = extinf_line.lower()
                 if gt_match:
                     text_to_check = gt_match.group(1).lower() + " " + text_to_check
@@ -81,17 +79,14 @@ jobs:
                 elif any(k in text_to_check for k in ['cocuk', 'kids', 'çocuk', 'animasyon', 'cartoon']):
                     new_group = '👶 Çocuk'
 
-                # Mevcut group-title'ı güncelle veya yoksa ekle
                 if gt_match:
                     extinf_line = re.sub(r'group-title="[^"]*"', f'group-title="{new_group}"', extinf_line, flags=re.IGNORECASE)
                 else:
                     extinf_line = extinf_line.replace('#EXTINF:', f'#EXTINF:-1 group-title="{new_group}"')
                 return extinf_line
 
-            # #EXTINF bloklarını bul ve düzenle
             new_content = re.sub(r'(#EXTINF:-?[\d\.\s].*?)(?=\n|$)', replace_group, content)
 
-            # Temizlik ve en üste EPG ekleme
             lines = new_content.splitlines()
             cleaned_lines = [l for l in lines if l.strip() and not l.startswith('#EXTM3U')]
             
@@ -109,13 +104,17 @@ jobs:
         wget -q --show-progress --no-check-certificate https://lichphatsong.site/schedule/epg.xml.gz -O EPG.xml.gz || true
         if [ -f EPG.xml.gz ]; then
             gunzip -f EPG.xml.gz || true
+            # Eğer sıkışmış dosya epg.xml olarak çıktıysa büyük harfe çevirelim
+            if [ -f epg.xml ]; then
+                mv epg.xml EPG.xml
+            fi
         fi
+        
+        # Diğer ek EPG kaynaklarını indirip birleştirelim (isteğe bağlı)
         wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/PhatBee/phatbeetv/refs/heads/main/merged_epg.xml -O EPG1.xml || true
         wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/bakulwifi/Epglive/refs/heads/main/epg.xml -O EPG2.xml || true
-        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/BuddyChewChew/tv/refs/heads/default/M3U8/TV.xml -O EPG3.xml || true
-        wget -q --show-progress --no-check-certificate https://raw.githubusercontent.com/Mikoshi-nyudo/dlhd/refs/heads/main/epgs/daddylive-channels-epg.xml -O EPG4.xml || true
         
-        # Geçici dosyaların temizlenmesi
+        # Geçici M3U dosyalarının temizlenmesi
         rm -f Sport1.m3u Football_match_live.m3u live_schedue.m3u mac_ozetleri.m3u kanallar7.m3u kanallar4.m3u EPG1.xml EPG2.xml EPG3.xml EPG4.xml || true
 
     - name: Commit and Push Changes
@@ -123,7 +122,11 @@ jobs:
         git config --local user.email "Love4vn@gmail.com"
         git config --local user.name "Love4vn"
         
-        git add IPTV.m3u EPG.xml
+        # Sadece mevcut olan dosyaları güvenli şekilde ekle
+        git add IPTV.m3u
+        if [ -f EPG.xml ]; then
+          git add EPG.xml
+        fi
         
         if git diff --staged --quiet; then
           echo "🟡 No changes to commit"
