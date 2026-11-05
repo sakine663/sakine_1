@@ -123,7 +123,6 @@ def get_active_server(base_url):
                 urls_text = match.group(1).replace('"', '').replace("'", "").replace("\n", "").replace("\r", "")
                 servers = [u.strip() for u in urls_text.split(',') if u.strip().startswith("http")]
                 
-                # Çalışan sunucuyu test et
                 for server in servers:
                     server = server.rstrip('/')
                     test_url = f"{server}/androstreamlivebs1.m3u8" if "checklist" in server else f"{server}/checklist/androstreamlivebs1.m3u8"
@@ -138,7 +137,9 @@ def get_active_server(base_url):
                     return servers[0].rstrip('/')
     except Exception as e:
         log.error(f"Sunucu listesi alınamadı: {e}")
-    return None
+    
+    # Yedek sunucu kökü (Bulunamazsa patlamaması için)
+    return "https://andro.evrenesoglu235.click"
 
 
 def create_m3u(channels):
@@ -161,7 +162,7 @@ def create_m3u(channels):
 
 def main():
     log.info("=" * 55)
-    log.info("   M3U8 Generator (Hızlı Mod) → MAHSUNSPORTS")
+    log.info("   M3U8 Generator (Tek Dosya Modu) → MAHSUNSPORTS")
     log.info("=" * 55)
 
     start = time.time()
@@ -169,10 +170,6 @@ def main():
     log.info(f"🌐 BASE_URL: {base_url}")
 
     active_server = get_active_server(base_url)
-    if not active_server:
-        log.error("❌ Aktif yayın sunucusu bulunamadı!")
-        return
-
     log.info(f"🎯 Aktif yayın sunucusu: {active_server}")
 
     channels = []
@@ -189,6 +186,7 @@ def main():
 
     elapsed = round(time.time() - start, 1)
 
+    # mike.m3u dosyasını her koşulda garanti yaz
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(create_m3u(channels))
 
@@ -203,7 +201,7 @@ def main():
             "channels"       : channels
         }, f, ensure_ascii=False, indent=2)
 
-    log.info(f"🏁 İşlem Tamamlandı! Toplam {len(channels)} kanal saniyeler içinde oluşturuldu ({elapsed}s)")
+    log.info(f"🏁 İşlem Tamamlandı! '{OUTPUT_FILE}' dosyasına toplam {len(channels)} kanal yazıldı ({elapsed}s)")
 
 
 if __name__ == "__main__":
