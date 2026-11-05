@@ -1,6 +1,6 @@
 {
-  "last_update": "2026-11-05T02:03:39.646432",
-  "total_channels": 10,
+  "last_update": "2026-11-05T06:01:23.453501",
+  "total_channels": 12,
   "channels": [
     {
       "name": "beIN Sports 1",
@@ -50,6 +50,16 @@
     {
       "name": "A Spor",
       "url": "https://css.d6e3eds5e065t5.help//aspor/tracks-v1a1/mono.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "trt-spor",
+      "url": "https://css.d6e3eds5e065t5.help//trtspor/tracks-v1a1/mono.m3u8",
+      "group": "Spor"
+    },
+    {
+      "name": "trt-1",
+      "url": "https://css.d6e3eds5e065t5.help//hls/arda.m3u8",
       "group": "Spor"
     }
   ]

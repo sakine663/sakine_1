@@ -1,6 +1,6 @@
 #EXTM3U
-# Guncelleme: 2026-11-05 02:03:39.646237
-# Toplam: 10
+# Guncelleme: 2026-11-05 06:01:23.453318
+# Toplam: 12
 
 #EXTINF:-1 tvg-name="beIN Sports 1" group-title="Spor",beIN Sports 1
 https://ronaldo.magnitude.workers.dev/?url=https://css.d6e3eds5e065t5.help//hls/arda.m3u8
@@ -31,4 +31,10 @@ https://ronaldo.magnitude.workers.dev/?url=https://css.d6e3eds5e065t5.help//ss2/
 
 #EXTINF:-1 tvg-name="A Spor" group-title="Spor",A Spor
 https://ronaldo.magnitude.workers.dev/?url=https://css.d6e3eds5e065t5.help//aspor/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="trt-spor" group-title="Spor",trt-spor
+https://ronaldo.magnitude.workers.dev/?url=https://css.d6e3eds5e065t5.help//trtspor/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="trt-1" group-title="Spor",trt-1
+https://ronaldo.magnitude.workers.dev/?url=https://css.d6e3eds5e065t5.help//hls/arda.m3u8
 
