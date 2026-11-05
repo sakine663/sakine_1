@@ -6,30 +6,36 @@ import logging
 import requests as req_lib
 from datetime import datetime
 
+# SSL uyarılarını kapat
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 # ── Sabitler ──────────────────────────────────────────
 DOMAIN_TIMEOUT = 3
 MIN_NUMBER     = 49
 MAX_NUMBER     = 75
 DOMAIN_BASE    = "mahsunsports"
 DOMAIN_TLD     = "xyz"
-OUTPUT_FILE    = "mike.m3u"
-STATS_FILE     = "stats.json"
+
+# Kesin yol (Scriptin çalıştığı dizine mike.m3u kaydeder)
+BASE_DIR       = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE    = os.path.join(BASE_DIR, "mike.m3u")
+STATS_FILE     = os.path.join(BASE_DIR, "stats.json")
 
 # ── Logging ───────────────────────────────────────────
-os.makedirs("logs", exist_ok=True)
+os.makedirs(os.path.join(BASE_DIR, "logs"), exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler(
-            f"logs/scraper_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log",
+            os.path.join(BASE_DIR, f"logs/scraper_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"),
             encoding="utf-8"
         ),
         logging.StreamHandler()
     ]
 )
 log = logging.getLogger(__name__)
-logging.getLogger("urllib3").setLevel(logging.ERROR)
 
 # ── Kanal Listesi ─────────────────────────────────────
 CHANNELS = [
@@ -138,7 +144,6 @@ def get_active_server(base_url):
     except Exception as e:
         log.error(f"Sunucu listesi alınamadı: {e}")
     
-    # Yedek sunucu kökü (Bulunamazsa patlamaması için)
     return "https://andro.evrenesoglu235.click"
 
 
@@ -162,7 +167,7 @@ def create_m3u(channels):
 
 def main():
     log.info("=" * 55)
-    log.info("   M3U8 Generator (Tek Dosya Modu) → MAHSUNSPORTS")
+    log.info("   M3U8 Generator (Garanti Mod) → MAHSUNSPORTS")
     log.info("=" * 55)
 
     start = time.time()
@@ -186,7 +191,9 @@ def main():
 
     elapsed = round(time.time() - start, 1)
 
-    # mike.m3u dosyasını her koşulda garanti yaz
+    # Dosyanın tam yolunu ekrana yazdırarak kaydediyoruz
+    log.info(f"💾 Dosya kaydediliyor: {OUTPUT_FILE}")
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(create_m3u(channels))
 
@@ -201,7 +208,7 @@ def main():
             "channels"       : channels
         }, f, ensure_ascii=False, indent=2)
 
-    log.info(f"🏁 İşlem Tamamlandı! '{OUTPUT_FILE}' dosyasına toplam {len(channels)} kanal yazıldı ({elapsed}s)")
+    log.info(f"🏁 İşlem Tamamlandı! Toplam {len(channels)} kanal yazıldı ({elapsed}s)")
 
 
 if __name__ == "__main__":
