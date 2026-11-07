@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-11-07T05:01:04.074916",
+  "last_update": "2026-11-07T11:39:39.355020",
   "total_channels": 12,
   "channels": [
     {
@@ -59,7 +59,7 @@
     },
     {
       "name": "trt-1",
-      "url": "https://css.d6e3eds5e065t5.help//hls/arda.m3u8",
+      "url": "https://css.d6e3eds5e065t5.help//trt1/tracks-v1a1/mono.m3u8",
       "group": "Spor"
     }
   ]
