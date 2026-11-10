@@ -15,6 +15,7 @@ HEADERS = {
 
 OUTPUT_FILENAME = "Koza.m3u"
 STATIC_LOGO = "https://i.hizliresim.com/6d22jbw.gif"
+PROXY_PREFIX = "https://ronaldo.magnitude.workers.dev/?url="
 
 def get_andro_content():
     print("--- Andro Panel ---")
