@@ -127,7 +127,11 @@ def get_andro_content():
         for cid, cname in channels:
             final_url = f"{server}/{cid}.m3u8" if "checklist" in server else f"{server}/checklist/{cid}.m3u8"
             final_url = final_url.replace("checklist//", "checklist/")
-            entry = f'#EXTINF:-1 tvg-logo="{STATIC_LOGO}" group-title="sahin", {cname}\n#EXTVLCOPT:http-referrer={active_site}/\n{final_url}'
+            
+            # Linkin başına proxy eklendi
+            proxied_url = PROXY_PREFIX + final_url
+            
+            entry = f'#EXTINF:-1 tvg-logo="{STATIC_LOGO}" group-title="sahin", {cname}\n#EXTVLCOPT:http-referrer={active_site}/\n{proxied_url}'
             results.append(entry)
 
     return results
