@@ -134,11 +134,11 @@ def main():
     # Türk kanalları önce, sonra ID sırasına göre
     results.sort(key=lambda x: (not is_turkish(x["name"]), x["id"]))
 
-    # JSON kaydet
+    # nilo.json olarak kaydet
     with open("nilo.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
-    # M3U oluştur (Sadece nilo.m3u)
+    # nilo.m3u oluştur
     m3u_lines = ["#EXTM3U\n"]
     for ch in results:
         group = "Türk Kanalları" if is_turkish(ch["name"]) else "Yabancı Kanallar"
