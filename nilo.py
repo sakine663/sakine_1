@@ -25,7 +25,6 @@ TURKISH_KEYWORDS = [
 
 
 def check_channel(ch_id):
-    """Her iki domain için iki ayrı URL'yi dener, ilk bulunanı döner."""
     endpoints = [
         ("ginikoturkish", f"https://ginikoturkish.com/xml/secure/plist.php?ch={ch_id}"),
         ("giniko", f"https://www.giniko.com/xml/secure/plist.php?ch={ch_id}"),
@@ -136,7 +135,7 @@ def main():
     with open("nilo.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
-    # nilo.m3u oluştur (Proxy ile)
+    # nilo.m3u oluştur (User-Agent ve Proxy ile)
     m3u_lines = ["#EXTM3U\n"]
     for ch in results:
         group = "Türk Kanalları" if is_turkish(ch["name"]) else "Yabancı Kanallar"
@@ -146,6 +145,8 @@ def main():
         m3u_lines.append(
             f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" '
             f'tvg-logo="{ch["logo"]}" group-title="{group}",{ch["name"]}\n'
+            f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n'
+            f'#EXTHTTP:{{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}}\n'
             f'{ch["proxied_stream"]}\n'
         )
 
@@ -157,7 +158,7 @@ def main():
     print(f"  → Türk kanalı : {turkish_count}")
     print(f"  → Yabancı     : {len(results) - turkish_count}")
     print("nilo.json kaydedildi")
-    print("nilo.m3u kaydedildi (proxy ile)")
+    print("nilo.m3u kaydedildi (Proxy ve User-Agent ile)")
 
 
 if __name__ == "__main__":
