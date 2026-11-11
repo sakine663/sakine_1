@@ -6,7 +6,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 TOTAL = 5000
 WORKERS = 40
-PROXY = "https://proxy.umittv.workers.dev/?url="
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
@@ -95,7 +94,6 @@ def check_channel(ch_id):
                 "name": name,
                 "logo": logo,
                 "stream": stream_url,
-                "proxied_stream": f"{PROXY}{stream_url}",
                 "source": source,
                 "xmlUrl": url
             }
@@ -135,7 +133,7 @@ def main():
     with open("nilo.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
-    # nilo.m3u oluştur (User-Agent ve Proxy ile)
+    # nilo.m3u oluştur (User-Agent ile)
     m3u_lines = ["#EXTM3U\n"]
     for ch in results:
         group = "Türk Kanalları" if is_turkish(ch["name"]) else "Yabancı Kanallar"
@@ -147,7 +145,7 @@ def main():
             f'tvg-logo="{ch["logo"]}" group-title="{group}",{ch["name"]}\n'
             f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n'
             f'#EXTHTTP:{{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}}\n'
-            f'{ch["proxied_stream"]}\n'
+            f'{ch["stream"]}\n'
         )
 
     with open("nilo.m3u", "w", encoding="utf-8") as f:
@@ -158,7 +156,7 @@ def main():
     print(f"  → Türk kanalı : {turkish_count}")
     print(f"  → Yabancı     : {len(results) - turkish_count}")
     print("nilo.json kaydedildi")
-    print("nilo.m3u kaydedildi (Proxy ve User-Agent ile)")
+    print("nilo.m3u kaydedildi (User-Agent ile)")
 
 
 if __name__ == "__main__":
