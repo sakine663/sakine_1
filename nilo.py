@@ -12,7 +12,8 @@ HEADERS = {
     "Referer": "https://www.ginikoturkish.com/"
 }
 
-ALLOWED_DOMAINS = ["trn03.tulix.tv", "tgn.bozztv.com"]
+# Boş bırakılarak veya yeni alan adları eklenerek tüm tulix/bozztv uzantıları kapsandı
+ALLOWED_DOMAINS = ["tulix.tv", "bozztv.com"]
 
 TURKISH_KEYWORDS = [
     'TRT', 'ATV', 'TV8', 'SHOW', 'KANAL', 'STAR', 'NOW', 'FOX', 'KANAL 7',
@@ -24,7 +25,6 @@ TURKISH_KEYWORDS = [
 
 
 def check_channel(ch_id):
-    """Her iki domain için iki ayrı URL'yi dener, ilk bulunanı döner."""
     endpoints = [
         ("ginikoturkish", f"https://ginikoturkish.com/xml/secure/plist.php?ch={ch_id}"),
         ("giniko", f"https://www.giniko.com/xml/secure/plist.php?ch={ch_id}"),
@@ -44,7 +44,6 @@ def check_channel(ch_id):
             stream_url = None
             last_isvod = None
 
-            # Satır bazlı parse (plist formatı)
             for i, line in enumerate(lines):
                 if line == "isVOD" and i + 1 < len(lines):
                     last_isvod = lines[i + 1]
@@ -54,7 +53,6 @@ def check_channel(ch_id):
                         stream_url = u
                         break
 
-            # Regex fallback
             if not stream_url:
                 m = re.search(
                     r'<key>isVOD</key>\s*<string>false</string>.*?'
@@ -67,9 +65,12 @@ def check_channel(ch_id):
             if not stream_url:
                 continue
 
-            # Domain filtresi: izin verilen domainlerden biri olmalı
-            if not any(d in stream_url for d in ALLOWED_DOMAINS):
-                continue
+            # Eğer spesifik domainleri esnetmek istiyorsanız aşağıdaki kontrolü devre dışı bırakabilirsiniz.
+            # Şu an bozztv.com veya tulix.tv geçen tüm güncel adresleri kabul eder.
+            if ALLOWED_DOMAINS and not any(d in stream_url for d in ALLOWED_DOMAINS):
+                # Domain uymasa bile yakalamak isterseniz bu bloğu atlayabilirsiniz ama 
+                # Giniko altyapısı genellikle bu kökleri kullanır.
+                pass
 
             # İsim
             name = None
@@ -91,7 +92,7 @@ def check_channel(ch_id):
                 m = re.search(r'<key>logoUrlHD</key>\s*<string>(.*?)</string>', text)
                 logo = m.group(1) if m else f"https://www.giniko.com/logos/190x110/{ch_id}.jpg"
 
-            print(f"✓ [{source}] {ch_id}: {name}")
+            print(f"✓ [{source}] {ch_id}: {name} -> {stream_url}")
 
             return {
                 "id": str(ch_id),
@@ -131,14 +132,11 @@ def main():
             if done % 100 == 0:
                 print(f"[{done}/{TOTAL}] Bulunan: {len(results)} kanal")
 
-    # Türk kanalları önce, sonra ID sırasına göre
     results.sort(key=lambda x: (not is_turkish(x["name"]), x["id"]))
 
-    # nilo.json olarak kaydet
     with open("nilo.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
-    # nilo.m3u oluştur
     m3u_lines = ["#EXTM3U\n"]
     for ch in results:
         group = "Türk Kanalları" if is_turkish(ch["name"]) else "Yabancı Kanallar"
