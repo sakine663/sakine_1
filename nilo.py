@@ -6,13 +6,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 TOTAL = 5000
 WORKERS = 40
+PROXY = "https://proxy.umittv.workers.dev/?url="
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Referer": "https://www.ginikoturkish.com/"
 }
 
-# Boş bırakılarak veya yeni alan adları eklenerek tüm tulix/bozztv uzantıları kapsandı
 ALLOWED_DOMAINS = ["tulix.tv", "bozztv.com"]
 
 TURKISH_KEYWORDS = [
@@ -25,6 +25,7 @@ TURKISH_KEYWORDS = [
 
 
 def check_channel(ch_id):
+    """Her iki domain için iki ayrı URL'yi dener, ilk bulunanı döner."""
     endpoints = [
         ("ginikoturkish", f"https://ginikoturkish.com/xml/secure/plist.php?ch={ch_id}"),
         ("giniko", f"https://www.giniko.com/xml/secure/plist.php?ch={ch_id}"),
@@ -65,11 +66,7 @@ def check_channel(ch_id):
             if not stream_url:
                 continue
 
-            # Eğer spesifik domainleri esnetmek istiyorsanız aşağıdaki kontrolü devre dışı bırakabilirsiniz.
-            # Şu an bozztv.com veya tulix.tv geçen tüm güncel adresleri kabul eder.
             if ALLOWED_DOMAINS and not any(d in stream_url for d in ALLOWED_DOMAINS):
-                # Domain uymasa bile yakalamak isterseniz bu bloğu atlayabilirsiniz ama 
-                # Giniko altyapısı genellikle bu kökleri kullanır.
                 pass
 
             # İsim
@@ -92,13 +89,14 @@ def check_channel(ch_id):
                 m = re.search(r'<key>logoUrlHD</key>\s*<string>(.*?)</string>', text)
                 logo = m.group(1) if m else f"https://www.giniko.com/logos/190x110/{ch_id}.jpg"
 
-            print(f"✓ [{source}] {ch_id}: {name} -> {stream_url}")
+            print(f"✓ [{source}] {ch_id}: {name}")
 
             return {
                 "id": str(ch_id),
                 "name": name,
                 "logo": logo,
                 "stream": stream_url,
+                "proxied_stream": f"{PROXY}{stream_url}",
                 "source": source,
                 "xmlUrl": url
             }
@@ -134,9 +132,11 @@ def main():
 
     results.sort(key=lambda x: (not is_turkish(x["name"]), x["id"]))
 
+    # nilo.json kaydet
     with open("nilo.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
+    # nilo.m3u oluştur (Proxy ile)
     m3u_lines = ["#EXTM3U\n"]
     for ch in results:
         group = "Türk Kanalları" if is_turkish(ch["name"]) else "Yabancı Kanallar"
@@ -146,9 +146,7 @@ def main():
         m3u_lines.append(
             f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" '
             f'tvg-logo="{ch["logo"]}" group-title="{group}",{ch["name"]}\n'
-            f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n'
-            f'#EXTHTTP:{{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}}\n'
-            f'{ch["stream"]}\n'
+            f'{ch["proxied_stream"]}\n'
         )
 
     with open("nilo.m3u", "w", encoding="utf-8") as f:
@@ -159,7 +157,7 @@ def main():
     print(f"  → Türk kanalı : {turkish_count}")
     print(f"  → Yabancı     : {len(results) - turkish_count}")
     print("nilo.json kaydedildi")
-    print("nilo.m3u kaydedildi")
+    print("nilo.m3u kaydedildi (proxy ile)")
 
 
 if __name__ == "__main__":
