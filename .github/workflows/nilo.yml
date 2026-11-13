@@ -1,4 +1,4 @@
-name: Günlük Kanal Tarama ve Güncelleme
+name: Giniko Kanal Tarama
 
 on:
   schedule:
@@ -6,33 +6,40 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-script:
+  scan:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
     steps:
-      - name: Depoyu Kopyala (Checkout)
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Python Ortamını Ayarla
+      - name: Python Setup
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
-      - name: Gerekli Kütüphaneleri Yükle
+      - name: Bagımlılık Kur
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Python Betiğini Çalıştır
+      - name: Kanalları Tara
         run: python nilo.py
 
-      - name: Değişiklikleri Git ile Kaydet ve Gönder
+      - name: Kanal sayısını kontrol et
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add nilo.json nilo.m3u
-          git diff --staged --quiet || git commit -m "Otomatik kanal listesi güncellemesi (nilo) 🤖"
-          git push
+          COUNT=$(python3 -c "import json; d=json.load(open('channels5.json')); print(len(d))")
+          echo "Bulunan kanal: $COUNT"
+          if (( COUNT < 1 )); then
+            echo "Kanal sayısı çok az ($COUNT), hata oluşmuş olabilir!"
+            exit 1
+          fi
+
+      - name: Commit ve Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add channels5.json channels.m3u
+          git diff --staged --quiet && echo "Degisiklik yok" || (git commit -m "Kanal tarama ve M3U guncelleme: $(date +'%Y-%m-%d')" && git push)
