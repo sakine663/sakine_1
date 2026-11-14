@@ -1,16 +1,16 @@
 name: Selcuk M3U Otomatik Güncelleme
 
 on:
-  scheduled:
-    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır (İsterseniz değiştirebilirsiniz)
-  workflow_dispatch: # GitHub arayüzünden manuel tetikleme butonu
+  schedule:
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
+  workflow_dispatch: # Manuel tetikleme butonu
 
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write # GitHub deposuna dosya commit edebilmek için yetki
+      contents: write
 
     steps:
       - name: Depoyu Klonla (Checkout)
