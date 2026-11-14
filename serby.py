@@ -14,11 +14,11 @@ HEADERS = {
     "User-Agent": USER_AGENT,
 }
 TIMEOUT_VAL = 15
+PROXY_URL = "https://seep.eu.org/"  # Engelleri aşmak için proxy geri eklendi
 GITHUB_DOMAIN_URL = "https://raw.githubusercontent.com/koprulu555/selcuk-full-domain-kontrol/refs/heads/main/selcuk_sports_guncel_domain.txt"
 OUTPUT_FILENAME = "selcuk.m3u"
 STATIC_LOGO_URL = "https://i.hizliresim.com/8xzjgqv.jpg"
 
-# Güncellenmiş ve genişletilmiş kanal haritası (ID -> Display Name)
 SELCUK_NAMES = {
     "selcukbeinsports1": "Bein Sports 1",
     "selcukbeinsports2": "Bein Sports 2",
@@ -61,20 +61,21 @@ SELCUK_NAMES = {
     "selcuktrtavaz": "TRT Avaz"
 }
 
-def get_html(url):
-    """Fetches HTML directly"""
+def get_html(url, use_proxy=False):
+    """Fetches HTML directly or via proxy if needed"""
+    target_url = PROXY_URL + url if use_proxy else url
     try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT_VAL, verify=False)
+        r = requests.get(target_url, headers=HEADERS, timeout=TIMEOUT_VAL, verify=False)
         r.raise_for_status()
         return r.text
     except Exception as e:
-        print(f"Error fetching {url}: {e}")
+        print(f"Error fetching {target_url}: {e}")
         return None
 
 def get_active_domain_from_github():
     """Fetches the current active domain from the GitHub raw file"""
     print("--- 📡 Fetching active domain from GitHub ---")
-    text = get_html(GITHUB_DOMAIN_URL)
+    text = get_html(GITHUB_DOMAIN_URL, use_proxy=False)
     if not text:
         return None
     
@@ -89,8 +90,15 @@ def get_active_domain_from_github():
 def find_stream_details(active_domain):
     """Scans the main page and player pages to extract base stream URL and origin"""
     print(f"🔗 Connecting to active domain: {active_domain}")
-    domain_html = get_html(active_domain)
+    
+    # Önce direkt bağlanmayı dene, başarısız olursa proxy kullan
+    domain_html = get_html(active_domain, use_proxy=False)
     if not domain_html:
+        print("⚠️ Direct connection failed, trying via proxy...")
+        domain_html = get_html(active_domain, use_proxy=True)
+    
+    if not domain_html:
+        print("❌ Could not load active domain page.")
         return None, None
 
     # Find player links
@@ -118,16 +126,14 @@ def find_stream_details(active_domain):
     ]
 
     for player_url in player_links:
-        html_player = get_html(player_url)
+        html_player = get_html(player_url, use_proxy=False)
         if html_player:
-            # Try finding origin
             for op in origin_patterns:
                 om = re.search(op, html_player)
                 if om:
                     origin_url = om.group(1)
                     break
 
-            # Try finding base stream url
             for pattern in patterns:
                 stream_match = re.search(pattern, html_player)
                 if stream_match:
@@ -143,7 +149,6 @@ def find_stream_details(active_domain):
         print("❌ Base stream URL not found.")
         return None, None
 
-    # Format base stream url
     if not base_stream_url.endswith('/'):
         base_stream_url += '/'
     if 'live/' not in base_stream_url:
@@ -173,7 +178,6 @@ def main():
     print(f"🎯 Base Stream URL: {base_url}")
     print(f"🌐 Origin URL: {origin_url}")
 
-    # Prepare M3U content
     m3u_lines = ["#EXTM3U"]
     
     print(f"⚡ Generating playlist entries...")
@@ -193,7 +197,6 @@ def main():
         )
         m3u_lines.append(entry)
 
-    # TRT 1 özel statik ekleme (isteğe bağlı olarak kalabilir)
     trt1_entry = (
         f'#EXTINF:-1 tvg-name="TRT 1" tvg-logo="{STATIC_LOGO_URL}" group-title="Selçuk TV",TRT 1\n'
         f'https://tv-trt1.medya.trt.com.tr/master.m3u8'
