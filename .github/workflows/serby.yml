@@ -1,0 +1,37 @@
+name: Selcuk M3U Otomatik Güncelleme
+
+on:
+  scheduled:
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır (İsterseniz değiştirebilirsiniz)
+  workflow_dispatch: # GitHub arayüzünden manuel tetikleme butonu
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # GitHub deposuna dosya commit edebilmek için yetki
+
+    steps:
+      - name: Depoyu Klonla (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Gerekli Kütüphaneleri Yükle
+        run: |
+          pip install requests urllib3
+
+      - name: Python Betiğini Çalıştır (M3U Üret)
+        run: |
+          python serby.py
+
+      - name: Değişiklikleri Kaydet ve GitHub'a Yükle
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add selcuk.m3u
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Otomatik M3U Güncellemesi [skip ci]" && git push)
