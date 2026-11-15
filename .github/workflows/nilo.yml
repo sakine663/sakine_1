@@ -1,7 +1,7 @@
-name: Selcuk M3U Otomatik Uretici
+name: Nilo M3U Otomatik Uretici
 
 on:
-  workflow_dispatch: # GitHub panelinden manuel çalıştırmak için
+  workflow_dispatch: # Manuel çalıştırmak için
   schedule:
     - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalıştırmak için
 
@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
-    # GitHub Actions'ın deponuza yazma (commit/push) izni olması için:
+    # GitHub Actions'ın deponuza yazma izni olması için şarttır:
     permissions:
       contents: write
 
@@ -35,13 +35,10 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "bot@github.com"
           
-          # Uzaktaki olası değişiklikleri güvenli bir şekilde al ve çakışmayı önle
+          # KRİTİK DÜZELTME: Push öncesi uzaktaki olası değişiklikleri güvenle çek
           git pull origin main --rebase || true
           
-          # Üretilen M3U dosyasını ekle (Python kodunuzdaki OUTPUT_FILENAME = "channels.m3u" ile aynı olmalıdır)
           git add channels.m3u
-          
           git commit -m "Otomatik M3U Güncellemesi [skip ci]" || exit 0
           
-          # Değişiklikleri depoya gönder
           git push origin main
