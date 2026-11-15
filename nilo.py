@@ -1,116 +1,159 @@
-#!/usr/bin/env python3
-import requests
-import json
 import re
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup
+import urllib3
+import warnings
 
-TOTAL = 1000
-WORKERS = 30
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+warnings.filterwarnings('ignore')
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Referer": "https://www.ginikoturkish.com/"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
 }
 
-ALLOWED_DOMAIN = "trn03.tulix.tv"
+GITHUB_URL = "https://raw.githubusercontent.com/koprulu555/selcuk-full-domain-kontrol/refs/heads/main/selcuk_sports_guncel_domain.txt"
+OUTPUT_FILENAME = "channels.m3u"
 
-def check_channel(ch_id):
-    url = f"https://ginikoturkish.com/xml/secure/plist.php?ch={ch_id}"
-
+def get_active_domain_from_github():
+    print("--- 📡 GitHub üzerinden güncel domain alınıyor ---")
     try:
-        r = requests.get(url, headers=HEADERS, timeout=8)
+        req = Request(GITHUB_URL, headers=HEADERS)
+        html = urlopen(req, timeout=10).read().decode()
+        match = re.search(r'selcuk_guncel_domain=(https?://[^\s\b]+)', html)
+        if match:
+            domain = match.group(1).strip().rstrip('/')
+            print(f"✅ Aktif Domain: {domain}")
+            return domain
+    except Exception as e:
+        print(f"❌ GitHub okuma hatası: {e}")
+    return "https://www.selcuksportshd14e17ba2ad.xyz"
 
-        if r.status_code != 200 or "HlsStreamURL" not in r.text:
+def fetch_html_with_proxy(url):
+    proxy_url = "https://api.codetabs.com/v1/proxy/?quest="
+    try:
+        req = Request(url, headers=HEADERS)
+        return urlopen(req, timeout=10).read().decode()
+    except Exception:
+        try:
+            req = Request(f"{proxy_url}{url}", headers=HEADERS)
+            return urlopen(req, timeout=10).read().decode()
+        except Exception as e:
+            print(f"❌ Proxy bağlantı hatası: {e}")
             return None
 
-        text = r.text
-        stream_url = None
+def build_m3u():
+    active_domain = get_active_domain_from_github()
+    referer = f"{active_domain}/"
+    
+    print(f"🔍 Ana sayfa taraniyor...")
+    html_content = fetch_html_with_proxy(active_domain)
+    if not html_content:
+        print("❌ Ana sayfa içeriği alınamadı.")
+        return
 
-        lines = [l.strip() for l in text.split("\n") if l.strip()]
-        last_isvod = None
+    # Sayfadaki tüm .click domainlerini bul
+    click_domains = re.findall(r'https?://[a-zA-Z0-9.-]+\.click', html_content)
+    
+    origin_domain = None
+    stream_cdn = None
 
-        for i, line in enumerate(lines):
-            if line == "isVOD" and i+1 < len(lines):
-                last_isvod = lines[i+1]
+    # 1. UXSYPlayer kök adresini bul (ORIGIN için)
+    for d in click_domains:
+        if "uxsyplayer" in d:
+            origin_domain = d
+            break
 
-            if line == "HlsStreamURL" and i+1 < len(lines):
-                u = lines[i+1]
-                if u.startswith("http") and last_isvod == "false":
-                    stream_url = u
-                    break
+    # 2. Gerçek Stream CDN adresini bul (AMP OLMAYAN ve uxsyplayer OLMAYAN .click adresini seç)
+    for d in click_domains:
+        if "uxsyplayer" not in d and "amp" not in d:
+            stream_cdn = d
+            break
 
-        if not stream_url:
-            m = re.search(r'<key>isVOD</key>\s*<string>false</string>.*?<key>HlsStreamURL</key>\s*<string>(.*?)</string>', text, re.DOTALL)
-            if m:
-                stream_url = m.group(1)
+    # Fallback / Emniyet Sübapları
+    if not origin_domain:
+        origin_domain = "https://main.uxsyplayer6859599e6c.click"
+    if not stream_cdn:
+        # Eğer listede temiz cdn yoksa bilinen kararlı cdn kökünü kullan
+        stream_cdn = "https://dga1op10s1u3lea.aae77b66b9d557.click"
 
-        if not stream_url or ALLOWED_DOMAIN not in stream_url:
-            return None
+    print(f"🎯 Kesinleşen ORIGIN: {origin_domain}")
+    print(f"🎯 Kesinleşen STREAM_CDN: {stream_cdn}")
 
-        name = None
-        for i, line in enumerate(lines):
-            if line == "name" and i+1 < len(lines) and not lines[i+1].startswith("http"):
-                name = lines[i+1].replace(" - Live", "").strip()
-                break
+    soup = BeautifulSoup(html_content, "html.parser")
+    links = []
 
-        if not name:
-            m = re.search(r'<key>name</key>\s*<string>(.*?)</string>', text)
-            name = m.group(1).replace(" - Live", "").strip() if m else f"Kanal {ch_id}"
+    for a in soup.find_all(attrs={"data-url": True}):
+        data_url = a["data-url"].strip()
+        name = a.text.strip()
+        if data_url:
+            if data_url.startswith("/"):
+                data_url = active_domain + data_url
+            links.append({"url": data_url, "name": name if name else "Kanal"})
 
-        logo = None
-        for i, line in enumerate(lines):
-            if line == "logoUrlHD" and i+1 < len(lines) and lines[i+1].startswith("http"):
-                logo = lines[i+1]
-                break
+    if not links:
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            name = a.text.strip()
+            if "id=" in href or "match" in href or "channel" in href:
+                if href.startswith("/"):
+                    href = active_domain + href
+                links.append({"url": href, "name": name if name else "Kanal"})
 
-        if not logo:
-            m = re.search(r'<key>logoUrlHD</key>\s*<string>(.*?)</string>', text)
-            logo = m.group(1) if m else f"https://www.giniko.com/logos/190x110/{ch_id}.jpg"
+    print(f"📺 Toplam {len(links)} yayın işleniyor...")
 
-        print(f"✓ {ch_id}: {name}")
+    ua = HEADERS["User-Agent"]
+    m3u_lines = ["#EXTM3U"]
+    ok = 0
+    seen = set()
 
-        return {
-            "id": ch_id,
-            "name": name,
-            "logo": logo,
-            "stream": stream_url,
-            "xmlUrl": url
-        }
+    for ch in links:
+        player_url = ch["url"]
+        
+        # Stream ID'yi hassas bir şekilde çek
+        stream_id = None
+        m_id = re.search(r"[?&]id=([a-zA-Z0-9_-]+)", player_url)
+        if m_id:
+            stream_id = m_id.group(1)
+        else:
+            parts = [p for p in player_url.split('/') if p and not p.startswith('http')]
+            if parts:
+                potential_id = parts[-1].split('?')[0]
+                if potential_id and potential_id not in ('index.html', 'index.php', 'embed.php', 'amp.html'):
+                    stream_id = potential_id
 
-    except:
-        return None
+        if not stream_id or "html" in stream_id.lower() or "undefined" in stream_id.lower() or stream_id == "selcukahaber":
+            continue
 
-def main():
-    print(f"Tarama başlıyor: 1-{TOTAL}")
-    results = []
+        # Doğru ve temiz Stream CDN ile m3u8 adresini oluştur
+        m3u8 = f"{stream_cdn.rstrip('/')}/live/{stream_id}/playlist.m3u8"
 
-    with ThreadPoolExecutor(max_workers=WORKERS) as executor:
-        futures = {executor.submit(check_channel, i): i for i in range(1, TOTAL+1)}
-        done = 0
+        if m3u8 in seen:
+            continue
+        seen.add(m3u8)
 
-        for future in as_completed(futures):
-            done += 1
-            result = future.result()
-            if result:
-                results.append(result)
+        display_name = ch["name"]
 
-            if done % 50 == 0:
-                print(f"[{done}/{TOTAL}] Bulunan: {len(results)} kanal")
+        # Tam istediğiniz başlık ve etiket sıralaması
+        entry = (
+            f'#EXT-X-USER-AGENT:{ua}\n'
+            f'#EXT-X-REFERER:{referer}\n'
+            f'#EXT-X-ORIGIN:{origin_domain}\n'
+            f'#EXTVLCOPT:http-user-agent={ua}\n'
+            f'#EXTVLCOPT:http-referrer={referer}\n'
+            f'#EXTVLCOPT:http-origin={origin_domain}\n'
+            f'#EXTINF:-1 tvg-name="{display_name}" group-title="nilo",{display_name}\n'
+            f'{m3u8}'
+        )
+        m3u_lines.append(entry)
+        ok += 1
 
-    results.sort(key=lambda x: x["id"])
+    with open(OUTPUT_FILENAME, "w", encoding="utf-8") as f:
+        f.write("\n".join(m3u_lines))
 
-    # JSON Kaydet
-    with open("channels5.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-
-    # M3U Kaydet
-    with open("channels.m3u", "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        for ch in results:
-            f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-logo="{ch["logo"]}" group-title="Giniko", {ch["name"]}\n')
-            f.write(f'{ch["stream"]}\n')
-
-    print(f"\nToplam {len(results)} kanal bulundu. JSON ve M3U dosyaları oluşturuldu.")
+    print(f"\n✅ M3U başarıyla oluşturuldu: {OUTPUT_FILENAME}")
+    print(f"📊 Eklenen Çalışan Yayın Sayısı: {ok}")
 
 if __name__ == "__main__":
-    main()
+    build_m3u()
