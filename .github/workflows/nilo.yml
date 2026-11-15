@@ -1,4 +1,4 @@
-name: Selcuk M3U Otomatik Uretici
+name: Nilo M3U Otomatik Uretici
 
 on:
   workflow_dispatch: # Manuel olarak GitHub panelinden "Run workflow" diyerek çalıştırabilmek için
