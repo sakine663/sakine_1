@@ -75,7 +75,6 @@ def build_m3u():
     if not origin_domain:
         origin_domain = "https://main.uxsyplayer6859599e6c.click"
     if not stream_cdn:
-        # Eğer listede temiz cdn yoksa bilinen kararlı cdn kökünü kullan
         stream_cdn = "https://dga1op10s1u3lea.aae77b66b9d557.click"
 
     print(f"🎯 Kesinleşen ORIGIN: {origin_domain}")
@@ -135,16 +134,10 @@ def build_m3u():
 
         display_name = ch["name"]
 
-        # Tam istediğiniz başlık ve etiket sıralaması
+        # Android / Televizo Uyumlu Tek Satır Boru (Pipe) Formatı
         entry = (
-            f'#EXT-X-USER-AGENT:{ua}\n'
-            f'#EXT-X-REFERER:{referer}\n'
-            f'#EXT-X-ORIGIN:{origin_domain}\n'
-            f'#EXTVLCOPT:http-user-agent={ua}\n'
-            f'#EXTVLCOPT:http-referrer={referer}\n'
-            f'#EXTVLCOPT:http-origin={origin_domain}\n'
             f'#EXTINF:-1 tvg-name="{display_name}" group-title="nilo",{display_name}\n'
-            f'{m3u8}'
+            f'{m3u8}|User-Agent={ua}&Referer={referer}&Origin={origin_domain}'
         )
         m3u_lines.append(entry)
         ok += 1
